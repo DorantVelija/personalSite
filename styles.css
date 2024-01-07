@@ -159,7 +159,8 @@ body.loaded .section1{
 }
 
 .section3{
-    height: 100vh;
+    height: 200vh;
+    
 }
 #projectText{
     text-align: center;
@@ -198,4 +199,17 @@ footer{
     padding: 60px;
     border: 0px;
 
+}
+.left ,.right{
+    display: flex;
+    justify-content: center;
+}
+.container3{
+    display: flex;
+    justify-content: center;
+}
+#text3{
+    text-align: center;
+    padding: 50px;
+    font-size: 3.8rem;
 }
