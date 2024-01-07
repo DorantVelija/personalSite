@@ -38,11 +38,9 @@
         projectSection.scrollIntoView({ behavior: "smooth"});
        });
 
-
-
-
-
+     
       
+
   </script>
 
     <section class="section1">
@@ -70,6 +68,7 @@
         </div>
       </div>
 
+          <img src="./icons/btnDown.png" id="goToAbout" class="goToBtn">
       <script>
         document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("iconLinkedIn").onclick = function () {
@@ -85,8 +84,17 @@
         document.getElementById("iconGitHub").onclick = function () {
           var linkUrl = "https://github.com/DorantVelija";
           window.location.href = linkUrl;
-        };
+        }; 
+        
+        document.getElementById("goToAbout").addEventListener("click", function() {
+        var aboutSection = document.querySelector(".section2");
+        aboutSection.style.visibility = "visible";
+        aboutSection.style.height = "100vh";
+        aboutSection.scrollIntoView({ behavior: "smooth"});
+       });
       });
+      
+      
         </script>
 
     </section>
@@ -123,8 +131,10 @@
               <object data="./icons//ISO_C++_Logo 1.png"></object>
               <object data="./icons/1532556 1.png"></object>
               <object data="./icons/919826 1.png"></object>
+              
             </div>
           </div>
+          <img src="./icons/btnDown2.png" id="goToProjects" class="goToBtn">
         </div>
       </div>
     </section>
@@ -173,6 +183,12 @@
       document.addEventListener("DOMContentLoaded", function () {
         document.body.classList.add("loaded");
       });
+      document.getElementById("goToProjects").addEventListener("click", function() {
+        var aboutSection = document.querySelector(".section3");
+        aboutSection.style.visibility = "visible";
+        aboutSection.style.height = "100vh";
+        aboutSection.scrollIntoView({ behavior: "smooth"});
+       });
     </script>
   </body>
 </html>

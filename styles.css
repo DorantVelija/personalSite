@@ -48,6 +48,28 @@ ul{
     background-color: #000;
     border-radius: 30px;
     padding: 10px 30px;
+    border: none;
+    font-weight: 900;
+}
+.goToBtn{
+   /* color: #ffffff;
+    background-color: #000;
+    border-radius: 30px;
+    padding: 15px 30px;
+    border: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-left: 45%;
+    */
+    transition: 300ms;
+
+    width: 8vh;
+    margin-left: 47%;
+    margin-right: 45%;
+}
+.goToBtn:hover{
+    scale:1.11;
+    cursor:pointer;
 }
 .container1{
     margin-top: 7rem;
