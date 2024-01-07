@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="icon" type="image/x-icon" href="./icons/favicon.ico">
+
+  </head>
+  <body>
+    <nav>
+      <object data="./icons/LogoDV.svg" id="logo"></object>
+      <ul>
+        <a class="navItem" id="about">About.</a>
+        <a class="navItem" id="projects">Projects.</a>
+        <a class="navItem">Services.</a>
+        <a id="btn" class="navItem">Contact.</a>
+      </ul>
+    </nav>
+
+    
+    <script>
+      //button clicks
+      document.getElementById("about").addEventListener("click", function() {
+        var aboutSection = document.querySelector(".section2");
+        aboutSection.style.visibility = "visible";
+        aboutSection.style.height = "100vh";
+        aboutSection.scrollIntoView({ behavior: "smooth"});
+       });  
+       
+       document.getElementById("projects").addEventListener("click", function() {
+        var projectSection = document.querySelector(".section3");
+        projectSection.style.visibility = "visible";
+        projectSection.style.height = "100vh";
+        projectSection.scrollIntoView({ behavior: "smooth"});
+       });
+
+
+
+
+
+      
+  </script>
+
+    <section class="section1">
+      <div class="container1">
+        <div class="text">
+          <h1 class="textFull1">HEY, I'M DORANT</h1>
+          <h1 class="textOutline1">HEY, I'M DORANT</h1>
+          <h1 class="textFull1">HEY, I'M DORANT</h1>
+        </div>
+        <div class="image">
+          <img src="./icons/image.png" id="img" />
+          <div class="icons">
+            <img
+              class="icon"
+              src="./icons/github.svg"
+              id="iconGitHub"
+            ></object>
+            <img
+              src="./icons/linkedin.svg"
+              class="icon"
+              id="iconLinkedIn"
+            ></object>
+            <img src="./icons/x.svg" id="iconX" class="icon"></img>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("iconLinkedIn").onclick = function () {
+          var linkUrl = "https://www.linkedin.com/in/dorant-velija-967021265/";
+          window.location.href = linkUrl;
+        };
+    
+        document.getElementById("iconX").onclick = function () {
+          var linkUrl = "https://www.twitter.com//dorantvelija";
+          window.location.href = linkUrl;
+        };
+    
+        document.getElementById("iconGitHub").onclick = function () {
+          var linkUrl = "https://github.com/DorantVelija";
+          window.location.href = linkUrl;
+        };
+      });
+        </script>
+
+    </section>
+
+    <section class="section2">
+      <div class="spacer">
+        <div class="container2">
+          <div class="text2">
+            <h1 id="textFull2">I’M AN ASPIRING SOFTWARE ENGINEER</h1>
+            <h1 id="textOutline2">UIX DESIGNER</h1>
+            <h1 id="textFull2">AND PHOTOGRAPHER</h1>
+            <h2 id="subText2">SKILLS</h2>
+            <div class="skills">
+              <div class="left">
+                <h2>TypeScript</h2>
+                <h2>React</h2>
+                <h2>C++</h2>
+                <h2>Python</h2>
+              </div>
+              <div class="right">
+                <h2>Figma</h2>
+                <h2>Photoshop</h2>
+                <h2>Premiere Pro</h2>
+                <h2>Illustrator</h2>
+              </div>
+            </div>
+            <div class="icons2">
+              <object
+                data="./icons/Typescript_logo_2020 1.png"
+                style="border-radius: 10px"
+              ></object>
+              <object data="./icons/660270 1.png"></object>
+              <object data="./icons/React-icon 1.png"></object>
+              <object data="./icons//ISO_C++_Logo 1.png"></object>
+              <object data="./icons/1532556 1.png"></object>
+              <object data="./icons/919826 1.png"></object>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section3"> 
+     
+      <h1 class="textOutline1" id="projectText">Projects</h1>
+     
+
+    </section>
+     
+
+
+
+
+
+
+
+    <footer>
+      <ul class="footerUl" id="footerLeft">
+        <a class="footeritem" id="mainFooterText">Dorant Velija 2024</a>
+        <a class="footeritem">Contact</a>
+        <a class="footeritem">Github</a>
+        <a class="footeritem">LinkedIn</a>
+        <a class="footeritem">Email</a>
+      </ul>
+
+      <ul class="footerUl" id="footerRight">
+        <a class="footeritem">a</a>
+        <a class="footeritem">b</a>
+        <a class="footeritem">c</a>
+        <a class="footeritem">d</a>
+        <a class="footeritem">e</a>
+      </ul>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.body.classList.add("loaded");
+      });
+    </script>
+  </body>
+</html>
