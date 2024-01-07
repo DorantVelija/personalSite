@@ -17,7 +17,7 @@ nav{
     position: fixed;
     margin-top: -110px;
  */
-}
+} 
 .navItem{
     margin-left:20px;
     padding: 10px 10px;
@@ -173,7 +173,6 @@ footer{
     background-color: #7E7665;
     color: #000;
     display: flex;
-    justify-items: ;
 }
 .footeritem{
     padding: 10px 15px 0px 15px;
