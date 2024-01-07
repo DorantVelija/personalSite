@@ -82,6 +82,7 @@ body.loaded .section1{
     -4px 7px 1px #333333, 
     -10px 10px 0px #5e5e5e, 
     -16px 13px 0px rgb(128, 128, 128);
+    cursor: default;
 }
 .image{
     display: grid;
@@ -91,6 +92,7 @@ body.loaded .section1{
     border-radius: 30px;
     margin-left: 5rem;
     align-self: center;
+    cursor:crosshair;
 }
 .icon{
     margin-top: 1rem;
@@ -128,6 +130,7 @@ body.loaded .section1{
     justify-self: center;
     color: #F1E5CC;
     text-align: center;
+    cursor: default;
 }
 #textOutline2{
     color: rgba(0, 0, 0, 0);
@@ -138,6 +141,7 @@ body.loaded .section1{
     color: #F1E5CC;
     text-align: center;
     font-size: 3rem;
+    cursor: default;
 }
 .skills{
     margin: auto !important;
@@ -147,6 +151,7 @@ body.loaded .section1{
     color: #F1E5CC;
     font-weight: 400;
     font-size: 1rem;
+    cursor: default;
 }
 .icons2{
     width: 50%;
@@ -159,7 +164,8 @@ body.loaded .section1{
 }
 
 .section3{
-    height: 100vh;
+    height: 200vh;
+    
 }
 #projectText{
     text-align: center;
@@ -198,4 +204,16 @@ footer{
     padding: 60px;
     border: 0px;
 
+}
+.left3 ,.right3{
+    display: flex;
+    justify-content: center;
+}
+.container3{
+    justify-content: center;
+}
+#text3{
+    text-align: center;
+    padding: 50px;
+    font-size: 3.8rem;
 }
