@@ -275,6 +275,10 @@ footer{
         scale: 0.7;
     }
     
+    .textFull1, .textOutline1{
+        font-size: 5rem;
+    }
+
     #textFull2, #subText2, #textOutline2{
         font-size: 3.2rem;
     }
