@@ -32,8 +32,6 @@
        
        document.getElementById("projects").addEventListener("click", function() {
         var projectSection = document.querySelector(".section3");
-        projectSection.style.visibility = "visible";
-        projectSection.style.height = "100vh";
         projectSection.scrollIntoView({ behavior: "smooth"});
        });
 
@@ -146,30 +144,37 @@
       <div class="codingProjects"> 
         <h1 class="textFull1" id="text3">Coding Projects</h1>
           <div class="codingContainer">
-            <div class="topContainer">
-              <div class="projectGrid">a</div>
-              <div class="projectGrid">b</div>
-              <div class="projectGrid">c</div>
+            <div class="leftContainer">
+              <div class="projectGrid"><h1 class="moreBtn">More</h1></div>
+              <div class="projectGrid"><h1 class="moreBtn">More</h1></div>
             </div>
-            <div class="bottomContainer">
-              <div class="projectGrid">d</div>
-              <div class="projectGrid">e</div>
-              <div class="projectGrid">f</div>
+            <div class="rightContainer">
+              <div class="projectGrid"><h1 class="moreBtn">More</h1></div>
+              <div class="projectGrid"><h1 class="moreBtn">More</h1></div>
             </div>
       </div>
       <div class="designProjects">
         <h1 class="textFull1" id="text3">Design Projects</h1>
         <div class="designContainer"><!-- <iframe class="designProject" width="20%" height="700px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FnxkjdvYX4Fv5GKq5SLpiMz%2FUntitled%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DkCppNPI4DMZWrzDY-1" allowfullscreen></iframe>-->   
          
-          <div class="topContainer">
-            <div class="projectGrid">a</div>
-            <div class="projectGrid">b</div>
-            <div class="projectGrid">c</div>
+          <div class="leftContainer">
+            <div class="projectGrid" id="vergooxD" onmouseover="showMore('vergooxBtn')" onmouseleave="removeMore('vergooxBtn')">
+              <h1 class="moreBtn" id="vergooxBtn" >More</h1>
+            </div>
+
+            <div class="projectGrid">
+              <h1 class="moreBtn">More</h1>
+            </div>
           </div>
-          <div class="bottomContainer">
-            <div class="projectGrid">d</div>
-            <div class="projectGrid">e</div>
-            <div class="projectGrid">f</div>
+
+          <div class="rightContainer">
+            <div class="projectGrid" id="silkyAiD" onmouseover="showMore('sikyAiBtn')" onmouseleave="removeMore('sikyAiBtn')">
+              <h1 class="moreBtn" id="sikyAiBtn">More</h1>
+            </div>
+            
+            <div class="projectGrid">
+              <h1 class="moreBtn">More</h1>
+            </div>
           </div>
       </div>
      </div>
@@ -206,9 +211,23 @@
      document.getElementById("goToProjects").addEventListener("click", function() {
         var aboutSection = document.querySelector(".section3");
         aboutSection.style.visibility = "visible";
-        aboutSection.style.height = "100vh";
         aboutSection.scrollIntoView({ behavior: "smooth"});
        });
+
+      function showMore(id){
+        var idOfElement = document.getElementById(id);
+        setTimeout(()=>{
+          idOfElement.style.visibility = "visible";
+        },100)
+
+      }
+
+      function removeMore(id){
+        var idOfElement = document.getElementById(id);
+        setTimeout(()=>{
+          idOfElement.style.visibility = "hidden";
+        },100)
+      }
     </script>
     <script src="./home.js"></script>
   </body>

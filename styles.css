@@ -191,13 +191,12 @@ body.loaded .section1{
 }
 
 .section3{
-    height: 350vh;
-    
+    height: 200vh;
     
 }
 #projectText{
     text-align: center;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 
@@ -243,22 +242,34 @@ footer{
 }
 #text3{
     text-align: center;
-    padding: 50px;
     font-size: 3.8rem;
 }
 .codingContainer,.designContainer{
     display: flex;
     flex-direction: row;
     align-content: center;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 .projectGrid{
     width: 30vw;
-    background-color: #000;
-    height: 300px;
-    margin: 30px;
+    background-color: #7e7565;
+    height: 30vh;
+    margin: 20px;
     border-radius: 10px;
+    transition: 600ms;
+    display: block;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.projectGrid:hover{
+    scale: 1.03;
+}
+.moreBtn{
+    transition: 100ms opcaity;
+    visibility: hidden;
 }
 
 
@@ -266,6 +277,9 @@ footer{
 @media (max-height: 800px) {
     .goToBtn{
         margin-top: -25px;
+    }
+    #goToProjects{
+        margin-top: 25px;
     }
     .skills{
         font-size: 0.8rem;
