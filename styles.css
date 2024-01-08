@@ -274,6 +274,9 @@ footer{
     .icons2{
         scale: 0.7;
     }
-
+    
+    #textFull2, #subText2, #textOutline2{
+        font-size: 3.2rem;
+    }
 
 }
