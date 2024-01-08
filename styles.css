@@ -199,6 +199,7 @@ body.loaded .section1{
 
 
 footer{
+    margin-top: 100px;
     height: 25vh;
     background-color: #7E7665;
     color: #000;
