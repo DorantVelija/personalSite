@@ -66,6 +66,7 @@ ul{
     width: 8vh;
     margin-left: 47%;
     margin-right: 45%;
+    margin-bottom: 30px;
 }
 .goToBtn:hover{
     scale:1.11;
