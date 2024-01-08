@@ -186,9 +186,8 @@ body.loaded .section1{
 }
 
 .section3{
-    height: 200vh;
+    height: 350vh;
     
-    height: 200vh;
     
 }
 #projectText{
@@ -240,4 +239,18 @@ footer{
     text-align: center;
     padding: 50px;
     font-size: 3.8rem;
+}
+.codingContainer,.designContainer{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.projectGrid{
+    width: 30vw;
+    background-color: #000;
+    height: 300px;
+    margin: 30px;
+    border-radius: 10px;
 }
