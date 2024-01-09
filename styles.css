@@ -66,7 +66,7 @@ ul{
     width: 8vh;
     margin-left: 47%;
     margin-right: 45%;
-    margin-top: -20px;
+    margin-bottom: 30px;
 }
 .goToBtn:hover{
     scale:1.11;
@@ -191,7 +191,8 @@ body.loaded .section1{
 }
 
 .section3{
-    height: 300vh;
+    height: 350vh;
+    
     
 }
 #projectText{
@@ -249,85 +250,13 @@ footer{
     flex-direction: row;
     align-content: center;
     justify-content: center;
+    justify-content: center;
     align-items: center;
 }
 .projectGrid{
     width: 30vw;
-    background-color: #7e7565;
-    height: 40vh;
-    margin: 20px;
-    border-radius: 10px;
-    transition: 600ms;
-    display: block;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-.projectGrid:hover{
-    scale: 1.03;
-    cursor: pointer;
-    box-shadow: 1px 1px 1px rgba(126, 117, 101, 10);
-    border-radius: 3px;
-}
-.moreBtn{
-    transition: 100ms opcaity;
-    visibility: hidden;
-    color: #fff;
-    padding: 5px 30px 5px 30px;
-    border-radius: 30px;
-    font-size: 1.3rem;
     background-color: #000;
-}
-.moreBtnDark{
-    transition: 100ms opcaity;
-    visibility: hidden;
-    color: #000;
-    padding: 5px 30px 5px 30px;
-    border-radius: 30px;
-    font-size: 1.3rem;
-    background-color: #fff;
-}
-#vergooxD{
-    background-image: url(./icons/vergoox.png);
-    background-size: cover;
-}
-#silkyAiD{
-    background-image: url(./icons/silkynotes.png);
-    background-size: cover;
-}
-#vergooxFigmaD{
-    background-image: url(./icons/vergooxFigma.png);
-    background-size: cover;
-}
-
-@media (max-height: 800px) {
-    .goToBtn{
-        margin-top: -25px;
-    }
-    #goToProjects{
-        margin-top: 25px;
-    }
-    .skills{
-        font-size: 0.8rem;
-        margin-top: -40px;
-    }
-    .icons2{
-        scale: 0.7;
-    }
-
-
-    .section3{
-        height: 200vh;
-    }    
-    .textFull1, .textOutline1{
-        font-size: 5rem;
-    }
-
-    #textFull2, #subText2, #textOutline2{
-        font-size: 3.2rem;
-    }
-    .projectGrid{
-        height: 30vh;
-    }
+    height: 300px;
+    margin: 30px;
+    border-radius: 10px;
 }
