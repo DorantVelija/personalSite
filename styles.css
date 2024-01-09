@@ -289,15 +289,15 @@ footer{
     background-color: #fff;
 }
 #vergooxD{
-    background-image: url(./icons/vergoox.png);
+    background-image: url("../icons/vergoox.png");
     background-size: cover;
 }
 #silkyAiD{
-    background-image: url(./icons/silkynotes.png);
+    background-image: url("../icons/silkynotes.png");
     background-size: cover;
 }
 #vergooxFigmaD{
-    background-image: url(./icons/vergooxFigma.png);
+    background-image: url("../icons/vergooxFigma.png");
     background-size: cover;
 }
 
