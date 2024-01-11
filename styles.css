@@ -81,7 +81,7 @@ ul{
     opacity: 0;
     transform: translateY(20px); /* Move the text down initially */
     transition: opacity 4s ease, transform 1s ease; /* Add transition effect */
-    height: 80vh;
+    height: 100vh;
 }
 body.loaded .section1{
     opacity: 1;
@@ -266,7 +266,6 @@ footer{
 }
 .projectGrid:hover{
     scale: 1.03;
-    cursor: pointer;
     box-shadow: 1px 1px 1px rgba(126, 117, 101, 10);
     border-radius: 3px;
 }
@@ -279,6 +278,9 @@ footer{
     font-size: 1.3rem;
     background-color: #000;
 }
+.moreBtn:hover , .moreBtnDark:hover{
+    cursor: pointer;
+}
 .moreBtnDark{
     transition: 100ms opcaity;
     visibility: hidden;
@@ -289,15 +291,15 @@ footer{
     background-color: #fff;
 }
 #vergooxD{
-    background-image: url(./icons/vergoox.png);
+    background-image: url("/icons/vergoox.png");
     background-size: cover;
 }
 #silkyAiD{
-    background-image: url(./icons/silkynotes.png);
+    background-image: url("/icons/silkynotes.png");
     background-size: cover;
 }
 #vergooxFigmaD{
-    background-image: url(./icons/vergooxFigma.png);
+    background-image: url("/icons/vergooxFigma.png");
     background-size: cover;
 }
 
