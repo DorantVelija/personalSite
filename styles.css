@@ -81,7 +81,7 @@ ul{
     opacity: 0;
     transform: translateY(20px); /* Move the text down initially */
     transition: opacity 4s ease, transform 1s ease; /* Add transition effect */
-    height: 80vh;
+    height: 100vh;
 }
 body.loaded .section1{
     opacity: 1;
@@ -111,7 +111,7 @@ body.loaded .section1{
     display: grid;
 }
 #img{
-    height: 30rem;
+    height: 55vh;
     border-radius: 30px;
     margin-left: 5rem;
     align-self: center;
@@ -188,6 +188,9 @@ body.loaded .section1{
 }
 .icons2 object {
     min-width: 0.5rem;
+}
+#goToProjects{
+    padding-top: 10px;
 }
 
 .section3{
@@ -266,7 +269,6 @@ footer{
 }
 .projectGrid:hover{
     scale: 1.03;
-    cursor: pointer;
     box-shadow: 1px 1px 1px rgba(126, 117, 101, 10);
     border-radius: 3px;
 }
@@ -279,6 +281,9 @@ footer{
     font-size: 1.3rem;
     background-color: #000;
 }
+.moreBtn:hover , .moreBtnDark:hover{
+    cursor: pointer;
+}
 .moreBtnDark{
     transition: 100ms opcaity;
     visibility: hidden;
@@ -289,19 +294,62 @@ footer{
     background-color: #fff;
 }
 #vergooxD{
-    background-image: url("./icons/vergoox.png");
+    background-image: url("/icons/vergoox.png");
     background-size: cover;
 }
 #silkyAiD{
-    background-image: url("./icons/silkynotes.png");
+    background-image: url("/icons/silkynotes.png");
     background-size: cover;
 }
 #vergooxFigmaD{
-    background-image: url("./icons/vergooxFigma.png");
+    background-image: url("/icons/vergooxFigma.png");
     background-size: cover;
 }
+@media (max-width: 1190px) {
+    .textFull1, .textOutline1{ 
+        font-size: 5rem;
+        line-height: 80px;
+        margin: 30px;
+    }
 
-@media (max-height: 800px) {
+    #textFull2, #subText2, #textOutline2{
+        font-size: 3.2rem;
+    }
+}
+
+@media (max-width: 875px) {
+    .nav{
+        width: 100vw;
+    }
+    #img{
+        padding: 0;
+        height: 45vh;
+        display: none;
+    }
+    .icons{
+        display: flex;
+        align-self: center;
+    } 
+    .text{
+        display: block;
+        padding: 0;
+    }
+    .textFull1, .textOutline1{ 
+        font-size: 4rem;
+        line-height: 80px;
+        margin: 30px;
+    }
+
+    #textFull2, #subText2, #textOutline2{
+        font-size: 3.2rem;
+        line-height: 50px;
+    }
+    .goToBtn{
+        width: 00vw;
+    }
+}
+
+@media (max-height: 768px) {
     .goToBtn{
         margin-top: -25px;
     }
