@@ -10,9 +10,10 @@ body{
 
 
 nav{
-    justify-content: flex-end;
+    padding-top: 20px;
     width: 100%;
     background-color: #F1E5CC;
+    display: flex;
   /*  overflow: hidden;
     position: fixed;
     margin-top: -110px;
@@ -32,9 +33,8 @@ nav{
     scale: 1.2;
 }
 ul{
-    float: right;
     margin-left: auto;
-    margin-right: 3%;
+    margin-right: auto;
     display: flex;
 
 }
