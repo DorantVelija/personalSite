@@ -30,7 +30,7 @@ nav{
 .navItem:hover{ 
     color: #000000;
     cursor: pointer;
-    scale: 1.2;
+    scale: 1.2 ;
 }
 ul{
     margin-left: auto;
@@ -305,6 +305,7 @@ footer{
     background-image: url("./icons/vergooxFigma.png");
     background-size: cover;
 }
+
 @media (max-width: 1190px) {
     .textFull1, .textOutline1{ 
         font-size: 5rem;
@@ -377,3 +378,24 @@ footer{
     .projectGrid{
         height: 30vh;
     }}
+@media (max-width: 565px){
+        .container1{
+         display: none !important;
+        }
+        .skills{
+         display: none !important;
+        }
+        .navItem{
+         scale: 0.8;
+         margin-left: 0;
+         padding: 5px 5px;
+         font-size: 1.1rem;
+        }
+        #btn{
+         padding: 5px;
+        }
+     
+         #textFull2, #subText2, #textOutline2{
+             font-size: 2rem;
+             padding: 0;
+         }}
