@@ -17,7 +17,7 @@ nav{
     position: fixed;
     margin-top: -110px;
  */
-    display:flex;
+    display:flex !important;
 } 
 .navItem{
     margin-left:20px;
@@ -349,7 +349,7 @@ footer{
     }
 }
 
-@media (max-height: 768px) {
+@media (max-height: 880px) {
     .goToBtn{
         margin-top: -25px;
     }
