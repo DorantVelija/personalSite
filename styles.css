@@ -314,9 +314,7 @@ footer{
 
     #textFull2, #subText2, #textOutline2{
         font-size: 3.2rem;
-    }
-}
-
+    }}
 @media (max-width: 875px) {
     .nav{
         width: 100vw;
@@ -346,9 +344,10 @@ footer{
     }
     .goToBtn{
         width: 00vw;
-    }
-}
-
+    }}
+@media (max-height: 805px){
+    .icons2{scale: 0.2;
+}}
 @media (max-height: 880px) {
     .goToBtn{
         margin-top: -25px;
@@ -377,5 +376,4 @@ footer{
     }
     .projectGrid{
         height: 30vh;
-    }
-}
+    }}
