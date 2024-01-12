@@ -13,11 +13,11 @@ nav{
     padding-top: 20px;
     width: 100%;
     background-color: #F1E5CC;
-    display: flex;
   /*  overflow: hidden;
     position: fixed;
     margin-top: -110px;
  */
+    display:flex;
 } 
 .navItem{
     margin-left:20px;
