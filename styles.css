@@ -346,13 +346,16 @@ footer{
 input:focus{
     border: 1px #000 solid;
 }
+input:hover ,textarea:hover{
+    cursor: url("./icons/cursors/text.svg"), text;
+}
 #messageForm{
     background-color: #F1E5CC;
     border-radius: 10px;
     border:none;
     padding: 10px;
 }
-input{
+input, textarea{
     font-family: 'Alata', sans-serif;
 }
 ::placeholder{
