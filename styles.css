@@ -345,6 +345,7 @@ footer{
 }
 input:focus{
     border: 1px #000 solid;
+    background-color: #F1E5CC;
 }
 input:hover ,textarea:hover{
     cursor: url("./icons/cursors/text.svg"), text;
