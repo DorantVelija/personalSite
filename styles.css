@@ -15,7 +15,7 @@ a{
 }
 nav{
     padding-top: 20px;
-    width: 100%;
+    width: 1--vw;
     background-color: #F1E5CC;
   /*  overflow: hidden;
     position: fixed;
@@ -52,7 +52,7 @@ ul{
     color: #ffffff;
     background-color: #000;
     border-radius: 30px;
-    padding: 10px 30px;
+    padding: 10px 20px;
     border: none;
     font-weight: 900;
     transition: 400ms;
@@ -325,7 +325,6 @@ footer{
     height: 90vh;
 }
 #contactForm{
-    background-color: #E2D6BE;
     border-radius: 30px;
     height: 50vh;
     width: 50vw;
@@ -337,11 +336,12 @@ footer{
 }
 .inputForm{
     background-color: #F1E5CC;
-    border-radius: 30px;
-    border: none;
+    border-radius: 10px;
+    border: 2px #7E7665 solid;
     height: 20px;
     padding: 10px;
     margin-bottom: 10px;
+    width: 25vw;
 }
 input:focus{
     border: 1px #000 solid;
@@ -352,8 +352,10 @@ input:hover ,textarea:hover{
 #messageForm{
     background-color: #F1E5CC;
     border-radius: 10px;
-    border:none;
+    border: 2px #7E7665 solid;
     padding: 10px;
+    width: 25vw;
+    resize: none;
 }
 input, textarea{
     font-family: 'Alata', sans-serif;

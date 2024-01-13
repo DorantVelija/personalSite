@@ -27,14 +27,14 @@
         <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="67ce7ca4-89b0-41eb-a2eb-ccf78b71e075">
 
-            <h3>Get in touch</h3>
-            <span id="topForm"> 
-                <input class="inputForm" type="text" name="Full Name" placeholder="Full Name" id="nameInput" required>
-                <input class="inputForm" type="email" name="Email" placeholder="E-mail" id="email" required>
-                <input class="inputForm" type="text" placeholder="Phone Number (optional)" id="phoneInput">
-            </span>
+            <h1>Say hello</h3>
+            <div id="topForm"> 
+                <input class="inputForm" type="text" name="Full Name" placeholder="Full Name" id="nameInput" required> <br>
+                <input class="inputForm" type="email" name="Email" placeholder="E-mail" id="email" required> <br>
+
+            </div>
             
-            <textarea name="message" id="messageForm" cols="70" rows="16" placeholder="Enter your message"></textarea> 
+            <textarea name="message" id="messageForm" cols="70" rows="13" placeholder="Enter your message"></textarea> 
             
             <span id="bottomForm">
                 <button type="submit" id="btn">Send Message</button>
@@ -70,6 +70,8 @@
       
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
+
+        //UNUSED FOR RIGHT NOW
         function sendEmail(){
             Email.send({
                 secureToken: "91f4bb11-4e7e-441b-94ce-5f8ecd1442bf",
