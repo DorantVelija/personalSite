@@ -341,8 +341,7 @@ footer{
     height: 20px;
     padding: 10px;
     margin-bottom: 10px;
-    width: 22vw;
-    padding-left: 30px;
+    width: 25vw;
 }
 input:focus{
     border: 1px #000 solid;
@@ -351,10 +350,13 @@ input:focus{
 input:hover ,textarea:hover{
     cursor: url("./icons/cursors/text.svg"), text;
 }
+
+/*
 .inputIcon{
     height: 20px;
-    margin-top: 10px;
+    padding-top: 10px;
 }
+*/
 #messageForm{
     background-color: #F1E5CC;
     border-radius: 10px;
