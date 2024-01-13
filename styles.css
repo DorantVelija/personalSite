@@ -6,9 +6,13 @@ body{
     font-family: 'Alata', sans-serif;
     margin: 0;
     background-color: #F1E5CC;
+    cursor: url("./icons/cursors/arrow.svg"),default;
 }
 
-
+a{
+    color: #000;
+    text-decoration: none;
+}
 nav{
     padding-top: 20px;
     width: 100%;
@@ -26,10 +30,11 @@ nav{
     font-size: 1.2rem;
     font-weight: 1000;
     transition: 300ms;
+    color: #000;
 }
 .navItem:hover{ 
     color: #000000;
-    cursor: pointer;
+    cursor: url("./icons/cursors/pointer.svg"), pointer;
     scale: 1.2 ;
 }
 ul{
@@ -70,7 +75,7 @@ ul{
 }
 .goToBtn:hover{
     scale:1.11;
-    cursor:pointer;
+    cursor: url("./icons/cursors/pointer.svg"), pointer;
 }
 .container1{
     margin-top: 7rem;
@@ -105,7 +110,7 @@ body.loaded .section1{
     -4px 7px 1px #333333, 
     -10px 10px 0px #5e5e5e, 
     -16px 13px 0px rgb(128, 128, 128);
-    cursor: default;
+    cursor: url("./icons/cursors/arrow.svg"), default;
 }
 .image{
     display: grid;
@@ -115,7 +120,7 @@ body.loaded .section1{
     border-radius: 30px;
     margin-left: 5rem;
     align-self: center;
-    cursor:crosshair;
+    cursor: url("./icons/cursors/cross.svg"), crosshair;
 }
 .icon{
     margin-top: 1rem;
@@ -126,7 +131,7 @@ body.loaded .section1{
 .icon:hover {
     max-width: 3.3rem;
     scale:1.1;
-    cursor:pointer;
+    cursor: url("./icons/cursors/pointer.svg"), pointer;
 }
 .icons{
     display: flex;
@@ -157,7 +162,7 @@ body.loaded .section1{
     justify-self: center;
     color: #F1E5CC;
     text-align: center;
-    cursor: default;
+    cursor: url("./icons/cursors/arrow.svg"), default;
 }
 #textOutline2{
     color: rgba(0, 0, 0, 0);
@@ -168,7 +173,7 @@ body.loaded .section1{
     color: #F1E5CC;
     text-align: center;
     font-size: 3rem;
-    cursor: default;
+    cursor: url("./icons/cursors/arrow.svg"), default;
 }
 .skills{
     margin: auto !important;
@@ -178,7 +183,7 @@ body.loaded .section1{
     color: #F1E5CC;
     font-weight: 400;
     font-size: 1rem;
-    cursor: default;
+    cursor: url("./icons/cursors/arrow.svg"), default;
 }
 .icons2{
     width: 50%;
@@ -194,7 +199,7 @@ body.loaded .section1{
 }
 
 .section3{
-    height: 300vh;
+    height: 200vh;
     
 }
 #projectText{
@@ -282,7 +287,7 @@ footer{
     background-color: #000;
 }
 .moreBtn:hover , .moreBtnDark:hover{
-    cursor: pointer;
+    cursor:url("./icons/cursors/pointer.svg"), pointer;
 }
 .moreBtnDark{
     transition: 100ms opcaity;
@@ -342,6 +347,9 @@ footer{
     #textFull2, #subText2, #textOutline2{
         font-size: 3.2rem;
         line-height: 50px;
+    }
+    #backToTop2, #backToTop{
+        display: none !important;
     }
     .goToBtn{
         width: 00vw;

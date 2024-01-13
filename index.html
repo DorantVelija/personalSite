@@ -17,7 +17,7 @@
         <a class="navItem" id="about">About.</a>
         <a class="navItem" id="projects">Projects.</a>
         <a class="navItem">Services.</a>
-        <a id="btn" class="navItem">Contact.</a>
+        <a id="btn" class="navItem" href="contact.html">Contact.</a>
       </ul>
     </nav>
 
@@ -34,7 +34,6 @@
         var projectSection = document.querySelector(".section3");
         projectSection.scrollIntoView({ behavior: "smooth"});
        });
-
      
       
 
@@ -188,14 +187,20 @@
 
      
     </section>
-     
+
+
+     <h1 style="text-align: center; margin-left: -30px;" id="backToTop2">Scroll to top</h1>
+    <img src="./icons/btnUp.svg" id="backToTop" class="goToBtn">
+   
+   
+   
     <footer>
       <ul class="footerUl" id="footerLeft">
         <a class="footeritem" id="mainFooterText">Dorant Velija 2024</a>
-        <a class="footeritem">Contact</a>
-        <a class="footeritem">Github</a>
-        <a class="footeritem">LinkedIn</a>
-        <a class="footeritem">Email</a>
+        <a class="footeritem" href="contact.html">Contact</a>
+        <a class="footeritem" href="https://github.com/DorantVelija/">Github</a>
+        <a class="footeritem" href="https://linkedin.com/DorantVelija">LinkedIn</a>
+        <a class="footeritem" href="contact.html">Email</a>
       </ul>
 
       <ul class="footerUl" id="footerRight">
@@ -218,8 +223,18 @@
      document.getElementById("goToProjects").addEventListener("click", function() {
         var aboutSection = document.querySelector(".section3");
         aboutSection.style.visibility = "visible";
-        aboutSection.scrollIntoView({ behavior: "smooth"});
+        aboutSection.scrollIntoView({ 
+          behavior: "smooth"
+        });
+       });   
+       
+       document.getElementById("backToTop").addEventListener("click", function() {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
        });
+
 
        // function for showmore button
       function showMore(id,link){
