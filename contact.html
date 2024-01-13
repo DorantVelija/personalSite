@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Contact Me</title>
     <link rel="stylesheet" href="output.css" />
     <link rel="stylesheet" href="styles.css"/>
 
@@ -22,11 +22,67 @@
     </nav>
 
 
+    <div class="containerForm">
+
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="67ce7ca4-89b0-41eb-a2eb-ccf78b71e075">
+
+            <h3>Get in touch</h3>
+            <span id="topForm"> 
+                <input class="inputForm" type="text" name="Full Name" placeholder="Full Name" id="nameInput" required>
+                <input class="inputForm" type="email" name="Email" placeholder="E-mail" id="email" required>
+                <input class="inputForm" type="text" placeholder="Phone Number (optional)" id="phoneInput">
+            </span>
+            
+            <textarea name="message" id="messageForm" cols="70" rows="20" placeholder="Enter your message"></textarea> 
+            
+            <span id="bottomForm">
+                <button type="submit" id="btn">Send Message</button>
+            </span>
+        </form>
+
+
+    </div>
 
 
 
 
 
 
+    <footer>
+        <ul class="footerUl" id="footerLeft">
+          <a class="footeritem" id="mainFooterText">Dorant Velija 2024</a>
+          <a class="footeritem" href="contact.html">Contact</a>
+          <a class="footeritem" href="https://github.com/DorantVelija/">Github</a>
+          <a class="footeritem" href="https://linkedin.com/DorantVelija">LinkedIn</a>
+          <a class="footeritem" href="contact.html">Email</a>
+        </ul>
+  
+        <ul class="footerUl" id="footerRight">
+          <a class="footeritem">a</a>
+          <a class="footeritem">b</a>
+          <a class="footeritem">c</a>
+          <a class="footeritem">d</a>
+          <a class="footeritem">e</a>
+        </ul>
+      </footer>
 
+      
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                secureToken: "91f4bb11-4e7e-441b-94ce-5f8ecd1442bf",
+                
+                To : 'dorantvelijadev@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Contact Form Enquiry",
+                Body : "Name" + docummen.getElementById("nameInput").value +
+                 " <br> Phone Number: "+ document.getElementById("phoneInput").value 
+                + "<br> Message: " + docummen.getElementById("messageForm").value 
+            }).then(
+            message => alert("Message sent successfully")
+            );
+        }
+    </script>
     </body>

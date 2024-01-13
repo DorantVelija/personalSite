@@ -55,6 +55,11 @@ ul{
     padding: 10px 30px;
     border: none;
     font-weight: 900;
+    transition: 400ms;
+}
+#btn:hover{
+    cursor: url("./icons/cursors/pointer.svg"), pointer;
+    scale: 1.1;
 }
 .goToBtn{
    /* color: #ffffff;
@@ -212,7 +217,7 @@ body.loaded .section1{
 footer{
     margin-top: 100px;
     height: 30vh;
-    background-color: #7E7665;
+    background-color: #E2D6BE;
     color: #000;
     display: flex;
 }
@@ -261,7 +266,7 @@ footer{
 }
 .projectGrid{
     width: 30vw;
-    background-color: #7e7565;
+    background-color: #E2D6BE;
     height: 40vh;
     margin: 20px;
     border-radius: 10px;
@@ -309,6 +314,52 @@ footer{
 #vergooxFigmaD{
     background-image: url("./icons/vergooxFigma.png");
     background-size: cover;
+}
+
+/* CONTACT FORM */
+.containerForm{
+    text-align: center;
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+#contactForm{
+    background-color: #E2D6BE;
+    border-radius: 30px;
+    height: 50vh;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+#topForm, #bottomForm{
+    display: block;
+}
+.inputForm{
+    background-color: #F1E5CC;
+    border-radius: 30px;
+    border: none;
+    height: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+input:focus{
+    border: 1px #000 solid;
+}
+#messageForm{
+    background-color: #F1E5CC;
+    border-radius: 10px;
+    border:none;
+    padding: 10px;
+}
+input{
+    font-family: 'Alata', sans-serif;
+}
+::placeholder{
+    font-family: 'Alata', sans-serif;
+    font-weight: 900;
+    color: #7E7665;
+    font-size: 0.8rem;
 }
 
 @media (max-width: 1190px) {
