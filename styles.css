@@ -10,7 +10,7 @@ body{
 }
 
 a{
-    color: #000;
+    color: #272725;
     text-decoration: none;
 }
 nav{
@@ -33,7 +33,7 @@ nav{
     color: #000;
 }
 .navItem:hover{ 
-    color: #000000;
+    color: #272725;
     cursor: url("./icons/cursors/pointer.svg"), pointer;
     scale: 1.2 ;
 }
@@ -50,7 +50,7 @@ ul{
 }
 #btn{
     color: #ffffff;
-    background-color: #000;
+    background-color: #272725;
     border-radius: 30px;
     padding: 10px 20px;
     border: none;
@@ -60,6 +60,24 @@ ul{
 #btn:hover{
     cursor: url("./icons/cursors/pointer.svg"), pointer;
     scale: 1.1;
+}
+#btnDiv{
+    text-align: center;
+}
+#btn2{
+    color: #ffffff;
+    background-color: #272725;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: none;
+    font-weight: 900;
+    transition: 400ms;
+    margin-right: auto;
+    margin-left: auto;
+}
+#btn2:hover{
+    cursor: url("./icons/cursors/pointer.svg"), pointer;
+    scale: 1.3;
 }
 .goToBtn{
    /* color: #ffffff;
@@ -72,10 +90,8 @@ ul{
     margin-left: 45%;
     */
     transition: 300ms;
-
     width: 8vh;
-    margin-left: 47%;
-    margin-right: 45%;
+    text-align: center;
     margin-top: -20px;
 }
 .goToBtn:hover{
@@ -107,8 +123,8 @@ body.loaded .section1{
 }
 .textOutline1{
     color: rgba(0, 0, 0, 0);
-    -webkit-text-stroke: 1px #000;
-    text-stroke: 1px #000;
+    -webkit-text-stroke: 1px #272725;
+    text-stroke: 1px #272725;
 }
 .textFull1:hover ,.textOutline1:hover{
     text-shadow: 0 1px 1px #F1E5CC, 
@@ -151,23 +167,47 @@ body.loaded .section1{
 .container2{
     height: 100vh;
     width: 100vw;
+    display: flex;
 }
 .spacer{
     aspect-ratio: 960/100%;
     width: 100%;
+    display: flex;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-image: url('./icons/blob-scene-haikei\ \(5\).svg');
 }
+.left2, .right2{
+    width: 50vw;
+    padding-top: 100px;
+}
+.left2{
+    background-image: url("./icons/aboutmepic.png");
+    background-size: cover;
+}
+
 #textFull2 ,#textOutline2{
     font-weight: 900;
-    font-size: 4rem;
+    font-size: 5rem;
     line-height: 2rem;
     justify-self: center;
     color: #F1E5CC;
     text-align: center;
     cursor: url("./icons/cursors/arrow.svg"), default;
+}
+#line{
+    width: 45vw;
+    background-color: #F1E5CC;
+    border-radius: 10px;
+    padding: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+p{
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #F1E5CC;
 }
 #textOutline2{
     color: rgba(0, 0, 0, 0);
@@ -180,27 +220,28 @@ body.loaded .section1{
     font-size: 3rem;
     cursor: url("./icons/cursors/arrow.svg"), default;
 }
-.skills{
+/*.skills{
     margin: auto !important;
     width:60vh;
     justify-content:space-evenly;
     display: flex;
     color: #F1E5CC;
     font-weight: 400;
-    font-size: 1rem;
     cursor: url("./icons/cursors/arrow.svg"), default;
-}
+}*/
 .icons2{
-    width: 50%;
+    width: 25vw;
     display: flex;
     justify-content: space-evenly;
     margin: auto;
+    padding: 30px;
 }
 .icons2 object {
     min-width: 0.5rem;
 }
 #goToProjects{
-    padding-top: 10px;
+    padding-top: 30px;
+    text-align: center;
 }
 
 .section3{
@@ -218,7 +259,7 @@ footer{
     margin-top: 100px;
     height: 30vh;
     background-color: #E2D6BE;
-    color: #000;
+    color: #272725;
     display: flex;
 }
 .footeritem{
@@ -293,7 +334,7 @@ footer{
     padding: 5px 30px 5px 30px;
     border-radius: 30px;
     font-size: 1.3rem;
-    background-color: #000;
+    background-color: #272725;
 }
 .moreBtn:hover , .moreBtnDark:hover{
     cursor:url("./icons/cursors/pointer.svg"), pointer;
@@ -301,7 +342,7 @@ footer{
 .moreBtnDark{
     transition: 100ms opcaity;
     visibility: hidden;
-    color: #000;
+    color: #272725;
     padding: 5px 30px 5px 30px;
     border-radius: 30px;
     font-size: 1.3rem;
