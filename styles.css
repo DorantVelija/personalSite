@@ -276,11 +276,14 @@ footer{
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    filter:saturate(30%);
 }
 .projectGrid:hover{
     scale: 1.03;
     box-shadow: 1px 1px 1px rgba(126, 117, 101, 10);
     border-radius: 3px;
+    
+    filter:saturate(100%)
 }
 .moreBtn{
     transition: 100ms opcaity;
