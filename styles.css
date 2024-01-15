@@ -252,14 +252,6 @@ p{
     height: 100vh;
     
 }
-.projectsText{
-    display: flex;
-    justify-content: center;
-}
-.codingProjects{
-    display: none !important;
-}
-
 #projectText{
     text-align: center;
     padding-top: 15px;
@@ -495,7 +487,7 @@ input, textarea{
 
 
     .section3{
-        height: 200vh;
+        height: 100vh;
     }    
     .textFull1, .textOutline1{
         font-size: 5rem;
