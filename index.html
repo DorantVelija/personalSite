@@ -181,12 +181,12 @@
       </div>
       <div class="designProjects">
         <div class="projectsText"> 
-          <h1 class="textFull1" id="text3">Design Projects</h1>
-          <h1 class="textFull1" id="text3">Coding Projects</h1>
+          <h1 class="text3-3" id="text3Design" onclick="switchProjects('designContainer','codingProjects', 'text3Design','text3Code')">Design Projects</h1>
+          <h1 class="text3-3" id="text3Code" onclick="switchProjects('codingProjects','designContainer', 'text3Code', 'text3Design')">Coding Projects</h1>
         </div>
        
 
-        <div class="designContainer"><!-- <iframe class="designProject" width="20%" height="700px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FnxkjdvYX4Fv5GKq5SLpiMz%2FUntitled%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DkCppNPI4DMZWrzDY-1" allowfullscreen></iframe>-->   
+        <div class="designContainer" id="designContainer"><!-- <iframe class="designProject" width="20%" height="700px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FnxkjdvYX4Fv5GKq5SLpiMz%2FUntitled%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DkCppNPI4DMZWrzDY-1" allowfullscreen></iframe>-->   
          
           <div class="leftContainer">
             <div class="projectGrid" id="vergooxD" onmouseover="showMore('vergooxBtn','vergoox.myshopify.com')" onmouseleave="removeMore('vergooxBtn')">
@@ -209,9 +209,7 @@
             </div>
           </div>
       </div>
-     </div> 
-     
-     <div class="codingProjects"> 
+      <div class="codingProjects" id="codingProjects"> 
         <div class="codingContainer">
           <div class="leftContainer">
             <div class="projectGrid"><h1 class="moreBtn">View</h1></div>
@@ -221,6 +219,9 @@
             <div class="projectGrid"><h1 class="moreBtn">View</h1></div>
             <div class="projectGrid"><h1 class="moreBtn">View</h1></div>
           </div>
+     </div> 
+     
+     
     </div>
 
      
@@ -293,6 +294,17 @@
         setTimeout(()=>{
           idOfElement.style.visibility = "hidden";
         },50)
+      }
+
+      function switchProjects(id1,id2,id3,id4){
+        let element1 = document.getElementById(id1);
+        let element2 = document.getElementById(id2);
+        let element3 = document.getElementById(id3);
+        let element4 = document.getElementById(id4);
+        element1.style.display = "flex";
+        element3.classList.add("text3Focus");
+        element2.style.display = "none";
+        element4.classList.remove("text3Focus");
       }
     </script>
     <script src="./home.js"></script>

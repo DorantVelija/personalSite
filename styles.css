@@ -252,11 +252,18 @@ p{
     height: 100vh;
     
 }
+.projectsText{
+    display: flex;
+    justify-content: center;
+}
 #projectText{
     text-align: center;
     padding-top: 15px;
 }
-
+.codingProjects{
+    display: none;
+    justify-content: center;
+}
 
 
 footer{
@@ -299,9 +306,28 @@ footer{
     justify-content: center;
 }
 #text3{
-    text-align: center;
+    font-weight: 900;
     font-size: 3rem;
-    padding: 30px;
+    line-height: 4rem;
+    justify-self: center;
+    transition: 400ms;
+    padding: 50px;
+}
+.text3-3{
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 4rem;
+    justify-self: center;
+    transition: 400ms;
+    padding: 50px;
+    cursor: url("./icons/cursors/arrow.svg"), default;
+}
+.text3Focus{
+    text-shadow: 0 1px 1px #F1E5CC, 
+    -4px 7px 1px #333333, 
+    -10px 10px 0px #5e5e5e, 
+    -16px 13px 0px rgb(128, 128, 128) !important;
+    cursor: url("./icons/cursors/arrow.svg"), default;
 }
 .codingContainer,.designContainer{
     display: flex;
@@ -309,6 +335,7 @@ footer{
     align-content: center;
     justify-content: center;
     align-items: center;
+    transition: 400ms;
 }
 .projectGrid{
     width: 30vw;

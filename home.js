@@ -1,4 +1,4 @@
-const questions = [
+const questions = [  [
     { name: 'scratch',
       question: [                                                       // 0 
         'saf','safsaf','safsafsafas','safkugwqfakfsajfbsaf'
@@ -13,7 +13,7 @@ const questions = [
             'safsaf','saf','saf safsafas','safkugwqfak'                 // 1
         ]
       }
-];
-
-console.log(questions[0].question[0])
-
+]  ];
+for(let i = 0; i < 9 ; i++){
+    let currentQuestion = questions[i][Math.floor(Math.random() * 6)];
+}
