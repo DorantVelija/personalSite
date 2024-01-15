@@ -323,6 +323,7 @@ footer{
     cursor: url("./icons/cursors/arrow.svg"), default;
 }
 .text3Focus{
+    font-size: 3rem;
     text-shadow: 0 1px 1px #F1E5CC, 
     -4px 7px 1px #333333, 
     -10px 10px 0px #5e5e5e, 
@@ -585,4 +586,10 @@ input, textarea{
          }
         .section3{
             height: 400vh;
-        }}
+        }
+        .projectsText{
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
