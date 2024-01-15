@@ -522,7 +522,10 @@ input, textarea{
         }
         #s1Hidden{
             display: block;
-            font-size: 2.6rem;
+            font-size: 2.2rem;
+        }
+        .container1{
+            margin-top: 4rem;
         }
         
         .icons{
