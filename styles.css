@@ -133,6 +133,10 @@ body.loaded .section1{
     -16px 13px 0px rgb(128, 128, 128);
     cursor: url("./icons/cursors/arrow.svg"), default;
 }
+#s1Hidden{
+    display: none;
+    margin: 0;
+}
 .image{
     display: grid;
 }
@@ -436,8 +440,7 @@ input, textarea{
     }
     #img{
         padding: 0;
-        height: 45vh;
-        display: none;
+        height: 30vh;
     }
     .icons{
         display: flex;
@@ -448,7 +451,7 @@ input, textarea{
         padding: 0;
     }
     .textFull1, .textOutline1{ 
-        font-size: 4rem;
+        font-size: 3rem;
         line-height: 80px;
         margin: 30px;
     }
@@ -496,8 +499,33 @@ input, textarea{
         height: 30vh;
     }}
 @media (max-width: 565px){
-        .container1{
-         display: none !important;
+    .left2{
+        display: none !important;
+    }
+    .right2{
+        width: 100vw;
+    }
+    p{
+        padding: 30px;
+        text-align: center;
+    }
+    #btn2{
+        display: none !important;
+    }
+        .text{
+            display: none !important;
+        }
+        #img{
+            margin:0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #s1Hidden{
+            display: block;
+        }
+        
+        .icons{
+            padding: 0;
         }
         .skills{
          display: none !important;
@@ -515,4 +543,7 @@ input, textarea{
          #textFull2, #subText2, #textOutline2{
              font-size: 2rem;
              padding: 0;
-         }}
+         }
+        .section3{
+            height: 220vh;
+        }}
