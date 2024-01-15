@@ -249,9 +249,17 @@ p{
 }
 
 .section3{
-    height: 200vh;
+    height: 100vh;
     
 }
+.projectsText{
+    display: flex;
+    justify-content: center;
+}
+.codingProjects{
+    display: none !important;
+}
+
 #projectText{
     text-align: center;
     padding-top: 15px;
@@ -300,7 +308,8 @@ footer{
 }
 #text3{
     text-align: center;
-    font-size: 3.8rem;
+    font-size: 3rem;
+    padding: 30px;
 }
 .codingContainer,.designContainer{
     display: flex;
