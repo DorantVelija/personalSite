@@ -499,6 +499,12 @@ input, textarea{
         height: 30vh;
     }}
 @media (max-width: 565px){
+    .codingContainer, .designContainer{
+        flex-direction: column;
+    }
+    .projectGrid{
+        width: 80vw;
+    }
         .left2{
             display: none !important;
         }
