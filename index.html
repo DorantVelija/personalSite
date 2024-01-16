@@ -21,24 +21,6 @@
       </ul>
     </nav>
 
- <script>
-      //button clicks
-      document.getElementById("about").addEventListener("click", function() {
-        var aboutSection = document.querySelector(".section2");
-        aboutSection.style.visibility = "visible";
-        aboutSection.style.height = "100vh";
-        aboutSection.scrollIntoView({ behavior: "smooth"});
-       });  
-       
-       document.getElementById("projects").addEventListener("click", function() {
-        var projectSection = document.querySelector(".section3");
-        projectSection.scrollIntoView({ behavior: "smooth"});
-       });
-     
-      
-
-  </script>
-
     <section class="section1">
       <div class="container1">
         <div class="text">
@@ -68,33 +50,7 @@
       </div>
       <div style="text-align: center;">
         <img src="./icons/btnDown.svg" id="goToAbout" class="goToBtn"></div>
-     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-        document.getElementById("iconLinkedIn").onclick = function () {
-          var linkUrl = "https://www.linkedin.com/in/dorantvelija/";
-          window.location.href = linkUrl;
-        };
-    
-        document.getElementById("iconX").onclick = function () {
-          var linkUrl = "https://www.twitter.com//dorantvelija";
-          window.location.href = linkUrl;
-        };
-    
-        document.getElementById("iconGitHub").onclick = function () {
-          var linkUrl = "https://github.com/DorantVelija";
-          window.location.href = linkUrl;
-        }; 
-        
-        document.getElementById("goToAbout").addEventListener("click", function() {
-        var aboutSection = document.querySelector(".section2");
-        aboutSection.style.visibility = "visible";
-        aboutSection.style.height = "100vh";
-        aboutSection.scrollIntoView({ behavior: "smooth"});
-       });
-      }); 
-      
-      
-        </script>
+
 
     </section>
 
@@ -251,7 +207,52 @@
         <a class="footeritem">e</a>
       </ul>
     </footer>
-    <script>
+
+    
+    <script>  
+    
+    //button clicks
+      document.getElementById("about").addEventListener("click", function() {
+        var aboutSection = document.querySelector(".section2");
+        aboutSection.style.visibility = "visible";
+        aboutSection.style.height = "100vh";
+        aboutSection.scrollIntoView({ behavior: "smooth"});
+       });  
+       
+       document.getElementById("projects").addEventListener("click", function() {
+        var projectSection = document.querySelector(".section3");
+        projectSection.scrollIntoView({ behavior: "smooth"});
+       });
+       // Btns
+       document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("iconLinkedIn").onclick = function () {
+          var linkUrl = "https://www.linkedin.com/in/dorantvelija/";
+          window.location.href = linkUrl;
+        };
+    
+        document.getElementById("iconX").onclick = function () {
+          var linkUrl = "https://www.twitter.com//dorantvelija";
+          window.location.href = linkUrl;
+        };
+    
+        document.getElementById("iconGitHub").onclick = function () {
+          var linkUrl = "https://github.com/DorantVelija";
+          window.location.href = linkUrl;
+        }; 
+        
+        document.getElementById("goToAbout").addEventListener("click", function() {
+        var aboutSection = document.querySelector(".section2");
+        aboutSection.style.visibility = "visible";
+        aboutSection.style.height = "100vh";
+        aboutSection.scrollIntoView({ behavior: "smooth"});
+       });
+      }); 
+
+
+      // a
+
+
+
 
       //add loaded class to slowly load section 1 and move up;
       document.addEventListener("DOMContentLoaded", function () {
