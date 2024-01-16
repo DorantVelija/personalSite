@@ -484,7 +484,10 @@ input, textarea{
         line-height: 80px;
         margin: 30px;
     }
-
+    .text3-3, .text3Focus{
+        font-size: 2rem !important;
+        padding: 0;
+    }
     #textFull2, #subText2, #textOutline2{
         font-size: 3.2rem;
         line-height: 50px;
@@ -591,5 +594,8 @@ input, textarea{
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
+        }
+        .icons2{
+            display: none;
         }
     }
