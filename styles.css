@@ -319,15 +319,18 @@ footer{
     line-height: 4rem;
     justify-self: center;
     transition: 400ms;
-    padding: 20px;
+    padding: 10px;
     border-radius: 30px;
     margin: 10px;
     background-color: rgba(0, 0, 0, 0);
     cursor: url("./icons/cursors/arrow.svg"), default;
 }
+
+.text3-3:hover{
+    cursor: url("./icons/cursors/pointer.svg");
+}
 .text3Focus{
     color: #fff;
-    padding: 1px;
     background-color: #272725;
     border-radius: 30px;
 }
