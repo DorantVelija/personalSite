@@ -327,7 +327,7 @@ footer{
 }
 
 .text3-3:hover{
-    cursor: url("./icons/cursors/pointer.svg");
+    cursor: url("./icons/cursors/pointer.svg"), pointer;
 }
 .text3Focus{
     color: #fff;
@@ -540,11 +540,13 @@ input, textarea{
         height: 30vh;
     }}
 @media (max-width: 565px){
+  
     .codingContainer, .designContainer{
         flex-direction: column;
     }
     .projectGrid{
         width: 90vw;
+        margin: auto;
     }
         .left2{
             display: none !important;
@@ -617,7 +619,7 @@ input, textarea{
             background-size: contain;
         }
         #euroLineD{
-            background-size: contain
+            background-size: cover;
         }
 
     }
