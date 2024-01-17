@@ -319,7 +319,7 @@ footer{
     line-height: 4rem;
     justify-self: center;
     transition: 400ms;
-    padding: 50px;
+    padding: 20px;
     border-radius: 30px;
     margin: 10px;
     background-color: rgba(0, 0, 0, 0);
@@ -541,7 +541,7 @@ input, textarea{
         flex-direction: column;
     }
     .projectGrid{
-        width: 80vw;
+        width: 90vw;
     }
         .left2{
             display: none !important;
@@ -606,6 +606,15 @@ input, textarea{
         }
         .icons2{
             display: none;
+        }
+        #vergooxFigmaD{
+            background-size: 100%;
+        }
+        #silkyAiD{
+            background-size: contain;
+        }
+        #euroLineD{
+            background-size: contain
         }
 
     }
