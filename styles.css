@@ -315,20 +315,21 @@ footer{
 }
 .text3-3{
     font-weight: 900;
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 4rem;
     justify-self: center;
     transition: 400ms;
     padding: 50px;
+    border-radius: 30px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0);
     cursor: url("./icons/cursors/arrow.svg"), default;
 }
 .text3Focus{
-    font-size: 3rem;
-    text-shadow: 0 1px 1px #F1E5CC, 
-    -4px 7px 1px #333333, 
-    -10px 10px 0px #5e5e5e, 
-    -16px 13px 0px rgb(128, 128, 128) !important;
-    cursor: url("./icons/cursors/arrow.svg"), default;
+    color: #fff;
+    padding: 1px;
+    background-color: #272725;
+    border-radius: 30px;
 }
 .codingContainer,.designContainer{
     display: flex;
@@ -596,11 +597,15 @@ input, textarea{
             height: 400vh;
         }
         .projectsText{
-            flex-direction: column;
-            justify-content: flex-start;
+            flex-direction: row;
+            justify-content: center;
             align-items: center;
+        }
+        .text3-3, .text3Focus{
+            font-size: 1.2rem !important;
         }
         .icons2{
             display: none;
         }
+
     }
