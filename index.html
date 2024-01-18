@@ -21,6 +21,24 @@
       </ul>
     </nav>
 
+ <script>
+      //button clicks
+      document.getElementById("about").addEventListener("click", function() {
+        var aboutSection = document.querySelector(".section2");
+        aboutSection.style.visibility = "visible";
+        aboutSection.style.height = "100vh";
+        aboutSection.scrollIntoView({ behavior: "smooth"});
+       });  
+       
+       document.getElementById("projects").addEventListener("click", function() {
+        var projectSection = document.querySelector(".section3");
+        projectSection.scrollIntoView({ behavior: "smooth"});
+       });
+     
+      
+
+  </script>
+
     <section class="section1">
       <div class="container1">
         <div class="text">
@@ -50,7 +68,33 @@
       </div>
       <div style="text-align: center;">
         <img src="./icons/btnDown.svg" id="goToAbout" class="goToBtn"></div>
-
+     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("iconLinkedIn").onclick = function () {
+          var linkUrl = "https://www.linkedin.com/in/dorantvelija/";
+          window.location.href = linkUrl;
+        };
+    
+        document.getElementById("iconX").onclick = function () {
+          var linkUrl = "https://www.twitter.com//dorantvelija";
+          window.location.href = linkUrl;
+        };
+    
+        document.getElementById("iconGitHub").onclick = function () {
+          var linkUrl = "https://github.com/DorantVelija";
+          window.location.href = linkUrl;
+        }; 
+        
+        document.getElementById("goToAbout").addEventListener("click", function() {
+        var aboutSection = document.querySelector(".section2");
+        aboutSection.style.visibility = "visible";
+        aboutSection.style.height = "100vh";
+        aboutSection.scrollIntoView({ behavior: "smooth"});
+       });
+      }); 
+      
+      
+        </script>
 
     </section>
 
@@ -137,7 +181,7 @@
       </div>
       <div class="designProjects">
         <div class="projectsText"> 
-          <h1 class="text3-3" id="text3Design" onclick="switchProjects('designContainer','codingProjects', 'text3Design','text3Code')">Design Projects</h1>
+          <h1 class="text3-3 text3Focus" id="text3Design" onclick="switchProjects('designContainer','codingProjects', 'text3Design','text3Code')">Design Projects</h1>
           <h1 class="text3-3" id="text3Code" onclick="switchProjects('codingProjects','designContainer', 'text3Code', 'text3Design')">Coding Projects</h1>
         </div>
        
@@ -159,8 +203,8 @@
               <h1 class="moreBtnDark" id="sikyAiBtn">View</h1>
             </div>
             
-            <div class="projectGrid">
-              <h1 class="moreBtn">View</h1> 
+            <div class="projectGrid" id="euroLineD" onmouseover="showMore('euroLineBtn', '')" onmouseleave="removeMore('euroLineBtn')">
+              <h1 class="moreBtnDark" id="euroLineBtn">View</h1> 
 
             </div>
           </div>
@@ -207,52 +251,7 @@
         <a class="footeritem">e</a>
       </ul>
     </footer>
-
-    
-    <script>  
-    
-    //button clicks
-      document.getElementById("about").addEventListener("click", function() {
-        var aboutSection = document.querySelector(".section2");
-        aboutSection.style.visibility = "visible";
-        aboutSection.style.height = "100vh";
-        aboutSection.scrollIntoView({ behavior: "smooth"});
-       });  
-       
-       document.getElementById("projects").addEventListener("click", function() {
-        var projectSection = document.querySelector(".section3");
-        projectSection.scrollIntoView({ behavior: "smooth"});
-       });
-       // Btns
-       document.addEventListener("DOMContentLoaded", function () {
-        document.getElementById("iconLinkedIn").onclick = function () {
-          var linkUrl = "https://www.linkedin.com/in/dorantvelija/";
-          window.location.href = linkUrl;
-        };
-    
-        document.getElementById("iconX").onclick = function () {
-          var linkUrl = "https://www.twitter.com//dorantvelija";
-          window.location.href = linkUrl;
-        };
-    
-        document.getElementById("iconGitHub").onclick = function () {
-          var linkUrl = "https://github.com/DorantVelija";
-          window.location.href = linkUrl;
-        }; 
-        
-        document.getElementById("goToAbout").addEventListener("click", function() {
-        var aboutSection = document.querySelector(".section2");
-        aboutSection.style.visibility = "visible";
-        aboutSection.style.height = "100vh";
-        aboutSection.scrollIntoView({ behavior: "smooth"});
-       });
-      }); 
-
-
-      // a
-
-
-
+    <script>
 
       //add loaded class to slowly load section 1 and move up;
       document.addEventListener("DOMContentLoaded", function () {

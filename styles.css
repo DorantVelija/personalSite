@@ -315,20 +315,24 @@ footer{
 }
 .text3-3{
     font-weight: 900;
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 4rem;
     justify-self: center;
     transition: 400ms;
-    padding: 50px;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0);
     cursor: url("./icons/cursors/arrow.svg"), default;
 }
+
+.text3-3:hover{
+    cursor: url("./icons/cursors/pointer.svg"), pointer;
+}
 .text3Focus{
-    font-size: 3rem;
-    text-shadow: 0 1px 1px #F1E5CC, 
-    -4px 7px 1px #333333, 
-    -10px 10px 0px #5e5e5e, 
-    -16px 13px 0px rgb(128, 128, 128) !important;
-    cursor: url("./icons/cursors/arrow.svg"), default;
+    color: #fff;
+    background-color: #272725;
+    border-radius: 30px;
 }
 .codingContainer,.designContainer{
     display: flex;
@@ -392,6 +396,11 @@ footer{
 #vergooxFigmaD{
     background-image: url("./icons/vergooxFigma.png");
     background-size: cover;
+}
+#euroLineD{
+    background-image: url('./icons/euroLineFigma.png');
+    background-size: cover;
+    background-position: 200%;
 }
 
 /* CONTACT FORM */
@@ -531,11 +540,13 @@ input, textarea{
         height: 30vh;
     }}
 @media (max-width: 565px){
+  
     .codingContainer, .designContainer{
         flex-direction: column;
     }
     .projectGrid{
-        width: 80vw;
+        width: 90vw;
+        margin: auto;
     }
         .left2{
             display: none !important;
@@ -591,11 +602,24 @@ input, textarea{
             height: 400vh;
         }
         .projectsText{
-            flex-direction: column;
-            justify-content: flex-start;
+            flex-direction: row;
+            justify-content: center;
             align-items: center;
+        }
+        .text3-3, .text3Focus{
+            font-size: 1.2rem !important;
         }
         .icons2{
             display: none;
         }
+        #vergooxFigmaD{
+            background-size: 100%;
+        }
+        #silkyAiD{
+            background-size: contain;
+        }
+        #euroLineD{
+            background-size: cover;
+        }
+
     }
