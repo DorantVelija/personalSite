@@ -388,7 +388,7 @@ footer{
     background-size: cover;
 }
 #silkyAiD{
-    background-image: url("./icons/silkynotes.png");
+    background-image: url("./icons/silkynotes2.png");
     background-size: cover;
 }
 #vergooxFigmaD{
@@ -404,6 +404,7 @@ footer{
 #weatherAppD{
     background-image: url('./icons/weatherApp.png');
     background-size: cover;
+    background-position: 100%;
 }
 
 /* CONTACT FORM */
