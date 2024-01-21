@@ -26,25 +26,25 @@ async function getWeather(city){
         document.querySelector('.condition').innerHTML = data.weather[0].main;
     
         if(data.weather[0].main == "Clouds"){
-            weatherIcon.src = "./WeatherApp/icons/weathericons/cloud.png";
+            weatherIcon.src = "./WeatherApp/icons/weatherIcons/cloud.png";
         }
         else if(data.weather[0].main == "Clear"){
             weatherIcon.src = "./WeatherApp/icons/weatherIcons/clear.png";
         }
         else if(data.weather[0].main == "Rain"){
-            weatherIcon.src = "./WeatherApp/icons/weathericons/raincloud.png";
+            weatherIcon.src = "./WeatherApp/icons/weatherIcons/raincloud.png";
         }
         else if(data.weather[0].main == "Drizzle"){
-            weatherIcon.src = "./WeatherApp/icons/weathericons/raincloud.png";
+            weatherIcon.src = "./WeatherApp/icons/weatherIcons/raincloud.png";
         }
         else if(data.weather[0].main == "Mist"){
-            weatherIcon.src = "./WeatherApp/icons/weathericons/cloud.png";
+            weatherIcon.src = "./WeatherApp/icons/weatherIcons/cloud.png";
         }
         else if(data.weather[0].main == "Snow"){
-            weatherIcon.src = "./WeatherApp/icons/weathericons/snow.png";
+            weatherIcon.src = "./WeatherApp/icons/weatherIcons/snow.png";
         }
         else if(data.weather[0].main == "Thunderstorm"){
-            weatherIcon.src = "./WeatherApp/icons/weathericons/lightning.png";
+            weatherIcon.src = "./WeatherApp/icons/weatherIcons/lightning.png";
         }
 
         document.querySelector(".box").style.display = 'flex'
