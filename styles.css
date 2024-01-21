@@ -401,6 +401,11 @@ footer{
     background-position: 200%;
 }
 
+#weatherAppD{
+    background-image: url('./icons/weatherApp.png');
+    background-size: cover;
+}
+
 /* CONTACT FORM */
 .containerForm{
     text-align: center;
