@@ -10,34 +10,45 @@ const weatherIcon = document.querySelector('.weatherIconC');
 
 async function getWeather(city){
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
-    var data = await response.json();
+    if(response.status == 404){
+        document.querySelector('#error').style.display = 'block';
+        document.querySelector(".box").style.display = 'none'
+    }
+    else if(response.status != 404)
+    {   
+        var data = await response.json();
 
+        document.querySelector('.cityName').innerHTML = data.name;
+        document.querySelector('#temp').innerHTML = Math.round(data.main.temp);
+        document.querySelector('#feelLike').innerHTML = Math.round(data.main.feels_like);
+        document.querySelector('.humidity').innerHTML = data.main.humidity + '%';
+        document.querySelector('.wind').innerHTML = data.wind.speed + 'km/h';
+        document.querySelector('.condition').innerHTML = data.weather[0].main;
+    
+        if(data.weather[0].main == "Clouds"){
+            weatherIcon.src = "/WeatherApp/icons/weathericons/cloud.png";
+        }
+        else if(data.weather[0].main == "Clear"){
+            weatherIcon.src = "/WeatherApp/icons/weathericons/clear.png";
+        }
+        else if(data.weather[0].main == "Rain"){
+            weatherIcon.src = "/WeatherApp/icons/weathericons/raincloud.png";
+        }
+        else if(data.weather[0].main == "Drizzle"){
+            weatherIcon.src = "/WeatherApp/icons/weathericons/raincloud.png";
+        }
+        else if(data.weather[0].main == "Mist"){
+            weatherIcon.src = "/WeatherApp/icons/weathericons/cloud.png";
+        }
+        else if(data.weather[0].main == "Snow"){
+            weatherIcon.src = "WeatherApp/icons/weathericons/snow.png";
+        }
+        else if(data.weather[0].main == "Thunderstorm"){
+            weatherIcon.src = "WeatherApp/icons/weathericons/lightning.png";
+        }
 
-    document.querySelector('.cityName').innerHTML = data.name;
-    document.querySelector('#temp').innerHTML = Math.round(data.main.temp);
-    document.querySelector('#feelLike').innerHTML = Math.round(data.main.feels_like)
-    document.querySelector('.condition').innerHTML = data.weather[0].main;
-
-    if(data.weather[0].main == "Clouds"){
-        weatherIcon.src = "/WeatherApp/icons/weathericons/cloud.png";
-    }
-    else if(data.weather[0].main == "Clear"){
-        weatherIcon.src = "/WeatherApp/icons/weathericons/clear.png";
-    }
-    else if(data.weather[0].main == "Rain"){
-        weatherIcon.src = "/WeatherApp/icons/weathericons/raincloud.png";
-    }
-    else if(data.weather[0].main == "Drizzle"){
-        weatherIcon.src = "/WeatherApp/icons/weathericons/raincloud.png";
-    }
-    else if(data.weather[0].main == "Mist"){
-        weatherIcon.src = "/WeatherApp/icons/weathericons/cloud.png";
-    }
-    else if(data.weather[0].main == "Snow"){
-        weatherIcon.src = "WeatherApp/icons/weathericons/snow.png";
-    }
-    else if(data.weather[0].main == "Thunderstorm"){
-        weatherIcon.src = "WeatherApp/icons/weathericons/lightning.png";
+        document.querySelector(".box").style.display = 'flex'
+        document.querySelector('#error').style.display = 'none';
     }
 
     
