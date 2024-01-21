@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./app.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="searchbox">
+      <div class="search">
+        <input
+          type="text"
+          name="citySearch"
+          id="citySearch"
+          placeholder="Search for your city"
+          spellcheck="false"
+        />
+        <button id="searchBtn">
+          <img
+            src="./icons/searchIconPng.png"
+            alt="search icon"
+            id="searchIcon"
+          />
+        </button>
+      </div>
+    </div>
+
+    <div class="weather">
+      <div class="box">
+        <div class="container">
+          <div class="weatherInfo">
+            <p class="cityName">Gostivar</p>
+            <img
+              src="./icons/suncloud.png"
+              alt="weather icon"
+              id="weatherIcon"
+            />
+            <p class="temperature"> <span id="temp">16</span><span> °C</span></p> 
+            <p class="temperatureFeel">Feels like <span id="feelLike"></span><span> °C</span></p>
+          </div>
+          <div class="weatherInfo2">
+            <div class="humidity">
+                <p class="extraInfo">Humidity:</p>
+            </div>
+            <div class="wind">
+                <p class="extraInfo">Wind:</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <script src='./weatherScript.js'></script>
+  </body>
+</html>

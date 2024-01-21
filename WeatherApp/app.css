@@ -1,0 +1,95 @@
+  @import url('https://fonts.googleapis.com/css2?family=Alata&family=Inter&family=Quicksand:wght@300&display=swap');
+
+body{
+    background-image: url('./icons/backgroundimg2.png');
+    background-size: contain;
+   
+    height: 98.2vh;
+    font-family: 'Alata', sans-serif;
+    font-family: 'Inter', sans-serif;
+}
+@media (max-width:1571px){
+   body{ background: linear-gradient(180deg, rgba(0,117,183,1) 0%, rgba(0,163,255,50) 100%);}}
+.searchbox{
+    display: flex;
+    justify-content: center;
+}
+#citySearch{
+    margin: 10px;
+    border-radius: 50px;
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(0, 163, 255, 50%);
+    border: none;
+    color: #fff;
+}
+#citySearch::placeholder{
+    color: rgba(255, 255, 255, 50%);
+    font-family: 'Inter', sans-serif;
+}
+input:focus, #citySearch:focus {
+    outline: #fff 1px solid !important;
+    background-color: rgba(0, 163, 255, 60%);
+}
+#searchIcon{
+    height: auto !important;
+    width: 10px;
+    padding-top: 3px;
+}
+#searchBtn{
+    background-color: rgba(0, 163, 255, 50%);
+    border: none;
+    border-radius: 50px;
+    padding: 13px;
+    width: 50px;
+}
+#searchBtn:hover{
+    outline: 1px solid #fff;
+}
+
+
+.weather{
+    display: flex !important;
+    justify-content: center;   
+}
+#weatherIcon{
+}
+.box{
+    display: flex;
+    backdrop-filter: blur(20px) !important;
+    border-radius: 30px;
+    width: 25vw;
+    height: 70vh;
+    justify-content: center;
+    margin-top: 50px;
+    border: 3px solid  rgba(0, 163, 255, 50%);
+}
+.weatherInfo{
+    display: block;
+}
+.weatherInfo2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.extraInfo{
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.temperature{
+    color: #fff;
+    font-weight: 900;
+    font-size: 56px;
+    text-align: center;
+}
+.temperatureFeel{
+    color: #fff;
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+}
+.cityName{
+    text-align: center;
+    font-size: 64px;
+    color: #fff;
+}
