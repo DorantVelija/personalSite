@@ -71,7 +71,7 @@ input:focus, #citySearch:focus {
 }
 .box{
     display: none;
-    backdrop-filter: blur(20px) !important;
+    backdrop-filter: blur(5px) !important;
     border-radius: 30px;
     width: 25vw;
     height: 80vh;
