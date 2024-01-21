@@ -26,10 +26,10 @@ async function getWeather(city){
         document.querySelector('.condition').innerHTML = data.weather[0].main;
     
         if(data.weather[0].main == "Clouds"){
-            weatherIcon.src = "/WeatherApp/icons/weathericons/cloud.png";
+            weatherIcon.src = "./WeatherApp/icons/weathericons/cloud.png";
         }
         else if(data.weather[0].main == "Clear"){
-            weatherIcon.src = "./WeatherApp/icons/weathericons/clear.png";
+            weatherIcon.src = "./WeatherApp/icons/weatherIcons/clear.png";
         }
         else if(data.weather[0].main == "Rain"){
             weatherIcon.src = "./WeatherApp/icons/weathericons/raincloud.png";
