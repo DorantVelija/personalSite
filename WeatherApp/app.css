@@ -10,6 +10,9 @@ body{
 }
 @media (max-width:1571px){
    body{ background: linear-gradient(180deg, rgba(0,117,183,1) 0%, rgba(0,163,255,50) 100%);}}
+
+
+
 .searchbox{
     display: flex;
     justify-content: center;
@@ -52,14 +55,20 @@ input:focus, #citySearch:focus {
     display: flex !important;
     justify-content: center;   
 }
+.iconDiv{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
 #weatherIcon{
+    text-align: center;
 }
 .box{
     display: flex;
     backdrop-filter: blur(20px) !important;
     border-radius: 30px;
     width: 25vw;
-    height: 70vh;
+    height: 80vh;
     justify-content: center;
     margin-top: 50px;
     border: 3px solid  rgba(0, 163, 255, 50%);
@@ -92,4 +101,16 @@ input:focus, #citySearch:focus {
     text-align: center;
     font-size: 64px;
     color: #fff;
+    margin-bottom: 0;
+}
+.condition{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    margin-top: 0;
+}
+@media (max-width:1170px){
+    .box{
+        width: 75vw;
+    }
 }
