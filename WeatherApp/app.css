@@ -64,7 +64,7 @@ input:focus, #citySearch:focus {
     text-align: center;
 }
 .box{
-    display: none;
+    display: flex;
     backdrop-filter: blur(20px) !important;
     border-radius: 30px;
     width: 25vw;
