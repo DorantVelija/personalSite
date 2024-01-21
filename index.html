@@ -17,7 +17,7 @@
         <a class="navItem" id="about">About.</a>
         <a class="navItem" id="projects">Projects.</a>
         <a class="navItem">Services.</a>
-        <a id="btn" class="navItem" href="contact.html">Contact.</a>
+        <a id="btn" class="navItem btnToContact">Contact.</a>
       </ul>
     </nav>
 
@@ -277,6 +277,12 @@
           });
        });
 
+
+       //btn to contact page
+       document.querySelector(".btnToContact").addEventListener("click", function(){
+        var linkUrl = 'dorantvelija.com/contact';
+          window.location.href = 'https://'+linkUrl;
+       })
 
        // function for showmore button
       function showMore(id,link){
