@@ -1,6 +1,5 @@
 const apiKey = 'd6cad16fd259c3486ee5d0f4b0110551'
 
-
 const search = document.querySelector('.searchbox button');
 const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?units=metric&q=';
 
@@ -39,7 +38,7 @@ async function getWeather(city){
             weatherIcon.src = "./WeatherApp/icons/weatherIcons/raincloud.png";
         }
         else if(data.weather[0].main == "Mist"){
-            weatherIcon.src = "./WeatherApp/icons/weatherIcons/cloud.png";
+            weatherIcon.src = "./WeatherApp/icons/weatherIcons/sunclouyd.png";
         }
         else if(data.weather[0].main == "Snow"){
             weatherIcon.src = "./WeatherApp/icons/weatherIcons/snow.png";
