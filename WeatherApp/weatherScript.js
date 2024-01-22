@@ -22,7 +22,7 @@ async function getWeather(city){
         document.querySelector('#temp').innerHTML = Math.round(data.main.temp);
         document.querySelector('#feelLike').innerHTML = Math.round(data.main.feels_like);
         document.querySelector('.humidity').innerHTML = data.main.humidity + '%';
-        document.querySelector('.wind').innerHTML = data.wind.speed + 'km/h';
+        document.querySelector('.wind').innerHTML = data.wind.speed + 'm/s';
         document.querySelector('.condition').innerHTML = data.weather[0].main;
         document.querySelector('.country').innerHTML = data.sys.country;
     

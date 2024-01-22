@@ -126,8 +126,8 @@ input:focus, #citySearch:focus {
     display: none;
 }
 #humidityIcon , #windIcon{
-    height: 40px;
-    padding: 5px;
+    height: 40px !important;
+    padding: 5px !important;
 }
 @media (max-width:1170px){
     .box{

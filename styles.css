@@ -352,7 +352,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    filter:saturate(40%);
+    filter:saturate(15%);
 }
 .projectGrid:hover{
     scale: 1.03;
