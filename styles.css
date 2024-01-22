@@ -606,7 +606,7 @@ input, textarea{
              padding: 0;
          }
         .section3{
-            height: 140vh;
+            height: 160vh;
         }
         .projectsText{
             flex-direction: row;
@@ -632,4 +632,7 @@ input, textarea{
             background-size: cover;
         }
 
+        .footeritem{
+            font-size: 14px;
+        }
     }
