@@ -544,7 +544,9 @@ input, textarea{
         height: 35vh;
     }}
 @media (max-width: 565px){
-  
+    .right2{
+        padding-top: 20px;
+    }
     .codingContainer, .designContainer{
         flex-direction: column;
     }
