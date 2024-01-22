@@ -91,6 +91,9 @@ input:focus, #citySearch:focus {
     color: #fff;
     padding-left: 10px;
     padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .temperature{
     color: #fff;
@@ -121,6 +124,10 @@ input:focus, #citySearch:focus {
     text-align: center;
     margin: 0;
     display: none;
+}
+#humidityIcon , #windIcon{
+    height: 40px;
+    padding: 5px;
 }
 @media (max-width:1170px){
     .box{
