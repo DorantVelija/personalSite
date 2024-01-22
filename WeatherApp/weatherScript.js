@@ -24,6 +24,7 @@ async function getWeather(city){
         document.querySelector('.humidity').innerHTML = data.main.humidity + '%';
         document.querySelector('.wind').innerHTML = data.wind.speed + 'km/h';
         document.querySelector('.condition').innerHTML = data.weather[0].main;
+        document.querySelector('.country').innerHTML = data.sys.country;
     
         if(data.weather[0].main == "Clouds"){
             weatherIcon.src = "./WeatherApp/icons/weatherIcons/cloud.png";
@@ -51,6 +52,7 @@ async function getWeather(city){
         document.querySelector('#error').style.display = 'none';
     }
 
+    console.log(data);
     
 }
 searchBtn.addEventListener('click', () => {
@@ -62,6 +64,7 @@ citySearch.addEventListener('keydown', () => {
      { getWeather(citySearch.value);
     }
 })
+
 
 
 

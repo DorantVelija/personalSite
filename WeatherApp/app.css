@@ -104,7 +104,7 @@ input:focus, #citySearch:focus {
     font-size: 20px;
     text-align: center;
 }
-.cityName{
+.cityName,.country, #name{
     text-align: center;
     font-size: 64px;
     color: #fff;
