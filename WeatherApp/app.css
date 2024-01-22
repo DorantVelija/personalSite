@@ -127,3 +127,9 @@ input:focus, #citySearch:focus {
         width: 75vw;
     }
 }
+@media (max-height:825px){  
+    .temperature{
+        margin: 0;
+    } 
+    
+}
