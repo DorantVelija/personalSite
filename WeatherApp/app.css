@@ -131,5 +131,8 @@ input:focus, #citySearch:focus {
     .temperature{
         margin: 0;
     } 
+    .cityName,.country, #name{
+        font-size: 50px;
+    }
     
 }
