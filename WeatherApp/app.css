@@ -85,7 +85,7 @@ input:focus, #citySearch:focus {
 }
 .weatherInfo2{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .extraInfo{
     color: #fff;
