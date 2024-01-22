@@ -27,6 +27,9 @@ async function getWeather(city){
     
         if(data.weather[0].main == "Clouds"){
             weatherIcon.src = "./WeatherApp/icons/weatherIcons/cloud.png";
+        }  
+        else if(data.weather[0].main == "Fog"){
+            weatherIcon.src = "./WeatherApp/icons/weatherIcons/cloud.png";
         }
         else if(data.weather[0].main == "Clear"){
             weatherIcon.src = "./WeatherApp/icons/weatherIcons/clear.png";
