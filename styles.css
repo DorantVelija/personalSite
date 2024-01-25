@@ -264,6 +264,10 @@ p{
     display: none;
     justify-content: center;
 }
+.photography{
+    display: none;
+    justify-content:center ;
+}
 
 
 footer{
@@ -332,9 +336,9 @@ footer{
     background-color: #272725;
     border-radius: 30px;
 }
-.codingContainer,.designContainer{
+.codingContainer,.designContainer,.photographyContainer{
     display: flex;
-    flex-direction: row;
+    flex-direction: row !important;
     align-content: center;
     justify-content: center;
     align-items: center;
