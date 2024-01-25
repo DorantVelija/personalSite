@@ -338,7 +338,7 @@ footer{
 }
 .codingContainer,.designContainer,.photographyContainer{
     display: flex;
-    flex-direction: row !important;
+    flex-direction: row;
     align-content: center;
     justify-content: center;
     align-items: center;
@@ -551,7 +551,8 @@ input, textarea{
     .right2{
         padding-top: 20px;
     }
-    .codingContainer, .designContainer{
+    
+    .codingContainer, .designContainer, .photographyContainer{
         flex-direction: column;
     }
     .projectGrid{
@@ -618,7 +619,7 @@ input, textarea{
             align-items: center;
         }
         .text3-3, .text3Focus{
-            font-size: 1rem !important;
+            font-size: 0.8rem !important;
             margin: 0.5rem;
             margin-top: 1rem;
             padding: 10px;
