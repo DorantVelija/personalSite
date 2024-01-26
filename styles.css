@@ -423,8 +423,7 @@ footer{
     border-radius: 30px;
     height: 50vh;
     width: 50vw;
-    margin-left: auto;
-    margin-right: auto;
+    min-width: 300px;
 }
 #topForm, #bottomForm{
     display: block;
@@ -639,5 +638,19 @@ input, textarea{
 
         .footeritem{
             font-size: 14px;
+        }
+        .containerForm{
+            padding: 0;
+            padding-top: 100px;
+            width: 100vw;
+        }
+        #contactForm{
+            width: 100vw;
+        }
+        .inputForm{
+            width: 200px;
+        }
+        #messageForm{
+            width: 200px;
         }
     }
