@@ -619,8 +619,8 @@ input, textarea{
             align-items: center;
         }
         .text3-3, .text3Focus{
-            font-size: 0.8rem !important;
-            margin: 0.5rem;
+            font-size: 0.7rem !important;
+            margin: 0.2rem;
             margin-top: 1rem;
             padding: 10px;
         }
@@ -653,5 +653,11 @@ input, textarea{
         }
         #messageForm{
             width: 200px;
+        }
+        .footeritem{
+            font-size: 0.8rem;
+        }
+        #mainFooterText{
+            font-size: 1.3rem;
         }
     }
