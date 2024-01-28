@@ -177,6 +177,7 @@ body.loaded .section1{
     aspect-ratio: 960/100%;
     width: 100%;
     display: flex;
+    justify-content: center; /* remove if split in half*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -349,7 +350,7 @@ footer{
     background-color: #E2D6BE;
     height: 40vh;
     margin: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     transition: 600ms;
     display: block;
     text-align: center;
