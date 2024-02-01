@@ -2,21 +2,26 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Quicksand:wght@300&display=swap');
+:root{
+    --colorBlack : #272725;
+    --colorBgLight: #F1E5CC;
+    --colorBgDark: #7E7665;
+}
 body{
     font-family: 'Alata', sans-serif;
     margin: 0;
-    background-color: #F1E5CC;
+    background-color: var(--colorBgLight);
     cursor: url("./icons/cursors/arrow.svg"),default;
 }
 
 a{
-    color: #272725;
+    color: var(--colorBlack);
     text-decoration: none;
 }
 nav{
     padding-top: 20px;
     width: 1--vw;
-    background-color: #F1E5CC;
+    background-color: var(--colorBgLight);
   /*  overflow: hidden;
     position: fixed;
     margin-top: -110px;
@@ -30,10 +35,10 @@ nav{
     font-size: 1.2rem;
     font-weight: 1000;
     transition: 300ms;
-    color: #000;
+    color: var(--colorBlack);
 }
 .navItem:hover{ 
-    color: #272725;
+    color: var(--colorBlack);
     cursor: url("./icons/cursors/pointer.svg"), pointer;
     scale: 1.2 ;
 }
@@ -49,8 +54,8 @@ ul{
     height: 6.5rem;
 }
 #btn{
-    color: #ffffff;
-    background-color: #272725;
+    color: var(--colorBgLight);
+    background-color: var(--colorBlack);
     border-radius: 30px;
     padding: 10px 20px;
     border: none;
@@ -64,20 +69,24 @@ ul{
 #btnDiv{
     text-align: center;
 }
-#btn2{
-    color: #ffffff;
-    background-color: #272725;
-    border-radius: 30px;
-    padding: 10px 20px;
-    border: none;
+#btn22{
+    color: var(--colorBgLight);
+    background-color: var(--colorBlack);
+    border-radius: 20px;
+    padding: 20px 40px;
+    border: none var(--colorBlack);
     font-weight: 900;
-    transition: 400ms;
+    font-size: 1.5rem;
     margin-right: auto;
     margin-left: auto;
+    transition: 200ms;
 }
-#btn2:hover{
+#btn22:hover{
     cursor: url("./icons/cursors/pointer.svg"), pointer;
-    scale: 1.3;
+    background-color: rgba(0, 0, 0, 0);
+    border: 4px solid var(--colorBgLight);
+    color: var(--colorBgLight);
+    transition: 200ms;
 }
 .goToBtn{
    /* color: #ffffff;
@@ -123,11 +132,11 @@ body.loaded .section1{
 }
 .textOutline1{
     color: rgba(0, 0, 0, 0);
-    -webkit-text-stroke: 1px #272725;
-    text-stroke: 1px #272725;
+    -webkit-text-stroke: 1px var(--colorBlack);
+    text-stroke: 1px var(--colorBlack);
 }
 .textFull1:hover ,.textOutline1:hover{
-    text-shadow: 0 1px 1px #F1E5CC, 
+    text-shadow: 0 1px 1px var(--colorBgLight), 
     -4px 7px 1px #333333, 
     -10px 10px 0px #5e5e5e, 
     -16px 13px 0px rgb(128, 128, 128);
@@ -198,13 +207,13 @@ body.loaded .section1{
     font-size: 8rem;
     line-height: 2rem;
     justify-self: center;
-    color: #F1E5CC;
+    color: var(--colorBgLight);
     text-align: center;
     cursor: url("./icons/cursors/arrow.svg"), default;
 }
 #line{
     width: 45vw;
-    background-color: #F1E5CC;
+    background-color: var(--colorBgLight);
     border-radius: 10px;
     padding: 2px;
     margin-left: auto;
@@ -213,15 +222,16 @@ body.loaded .section1{
 p{
     font-weight: 300;
     font-size: 2.4rem;
-    color: #F1E5CC;
+    color: var(--colorBgLight);
+    cursor: url("./icons/cursors/arrow.svg"), default;
 }
 #textOutline2{
     color: rgba(0, 0, 0, 0);
-    -webkit-text-stroke: 1px #F1E5CC;
-    text-stroke: 1px #F1E5CC;
+    -webkit-text-stroke: 1px var(--colorBgLight);
+    text-stroke: 1px var(--colorBgLight);
 }
 #subText2{
-    color: #F1E5CC;
+    color: var(--colorBgLight);
     text-align: center;
     font-size: 3rem;
     cursor: url("./icons/cursors/arrow.svg"), default;
@@ -231,7 +241,7 @@ p{
     width:60vh;
     justify-content:space-evenly;
     display: flex;
-    color: #F1E5CC;
+    color: var(--colorBgLight);
     font-weight: 400;
     cursor: url("./icons/cursors/arrow.svg"), default;
 }*/
@@ -240,7 +250,8 @@ p{
     display: flex;
     justify-content: space-evenly;
     margin: auto;
-    padding: 30px;
+    padding-top: 0px;
+    margin-top: 80px;
 }
 .icons2 object {
     min-width: 0.5rem;
@@ -276,7 +287,7 @@ footer{
     margin-top: 100px;
     height: 30vh;
     background-color: #E2D6BE;
-    color: #272725;
+    color: var(--colorBlack);
     display: flex;
 }
 .footeritem{
@@ -335,7 +346,7 @@ footer{
 }
 .text3Focus{
     color: #fff;
-    background-color: #272725;
+    background-color: var(--colorBlack);
     border-radius: 30px;
 }
 .codingContainer,.designContainer,.photographyContainer{
@@ -375,7 +386,7 @@ footer{
     padding: 5px 30px 5px 30px;
     border-radius: 30px;
     font-size: 1.3rem;
-    background-color: #272725;
+    background-color: var(--colorBlack);
 }
 .moreBtn:hover , .moreBtnDark:hover{
     cursor:url("./icons/cursors/pointer.svg"), pointer;
@@ -383,7 +394,7 @@ footer{
 .moreBtnDark{
     transition: 100ms opcaity;
     visibility: hidden;
-    color: #272725;
+    color: var(--colorBlack);
     padding: 5px 30px 5px 30px;
     border-radius: 30px;
     font-size: 1.3rem;
@@ -431,7 +442,7 @@ footer{
     display: block;
 }
 .inputForm{
-    background-color: #F1E5CC;
+    background-color: var(--colorBgLight);
     border-radius: 10px;
     border: 2px #7E7665 solid;
     height: 20px;
@@ -440,7 +451,7 @@ footer{
     width: 25vw;
 }
 input:focus{
-    background-color: #F1E5CC;
+    background-color: var(--colorBgLight);
     outline: none;
 }
 input:hover ,textarea:hover{
@@ -454,7 +465,7 @@ input:hover ,textarea:hover{
 }
 */
 #messageForm{
-    background-color: #F1E5CC;
+    background-color: var(--colorBgLight);
     border-radius: 10px;
     border: 2px #7E7665 solid;
     padding: 10px;
@@ -571,7 +582,7 @@ input, textarea{
             padding: 30px;
             text-align: center;
         }
-        #btn2{
+        #btn22{
             display: none !important;
         }
         .text{
