@@ -11,24 +11,24 @@
 
   </head>
   <body>
-    <nav style="display: flex;">
+    <nav class="navContact">
      <!-- <object data="./icons/LogoDV.svg" id="logo"></object>-->
-      <ul style=" margin-left: auto; margin-right: auto; display: flex;">
-        <a class="navItem" id="about" href="index.html">About.</a>
-        <a class="navItem" id="projects" href="index.html">Projects.</a>
-        <a class="navItem" href="index.html" >Services.</a>
-        <a id="btn" class="navItem">Contact.</a>
+      <ul style=" margin-left: auto; margin-right: auto; display: flex; ">
+        <a class="navItem navItemContact" id="about" href="index.html">About.</a>
+        <a class="navItem navItemContact" id="projects" href="index.html">Projects.</a>
+        <a class="navItem navItemContact" href="index.html" >Services.</a>
+        <a id="btn" class="navItem navItemContact">Contact.</a>
       </ul>
     </nav>
 
 
-    <div style="display: flex; justify-content: center;">
+    <div id="contactDiv">
     <div class="containerForm">
 
         <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="67ce7ca4-89b0-41eb-a2eb-ccf78b71e075">
 
-            <h1>Say hello</h3>
+            <h1 id="contactHello">Say hello</h3>
             <div id="topForm"> 
               <!-- <svg xmlns="http://www.w3.org/2000/svg" class="inputIcon" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--> <!-- <path fill="#000000" d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg> -->
                 <input class="inputForm" type="text" name="Full Name" placeholder="Full Name" id="nameInput" required> <br>
@@ -40,7 +40,7 @@
             <textarea name="message" id="messageForm" cols="70" rows="13" placeholder="Enter your message"></textarea> 
             
             <span id="bottomForm">
-                <button type="submit" id="btn">Send Message</button>
+                <button type="submit" id="btn22" style="font-size: 1rem; transition: 400ms; margin-top: 10px;">Send Message</button>
             </span>
         </form>
       </div>
@@ -52,13 +52,13 @@
 
 
 
-    <footer>
+    <footer class="footerContact">
         <ul class="footerUl" id="footerLeft">
-          <a class="footeritem" id="mainFooterText">Dorant Velija 2024</a>
-          <a class="footeritem" href="https://dorantvelija.com/contact">Contact</a>
-          <a class="footeritem" href="https://github.com/DorantVelija/">Github</a>
-          <a class="footeritem" href="https://linkedin.com/DorantVelija">LinkedIn</a>
-          <a class="footeritem" href="https://dorantvelija.com/contact">Email</a>
+          <a class="footeritem"  id="mainFooterText">Dorant Velija 2024</a>
+          <a class="footeritem"  href="https://dorantvelija.com/contact">Contact</a>
+          <a class="footeritem"  href="https://github.com/DorantVelija/">Github</a>
+          <a class="footeritem"  href="https://linkedin.com/DorantVelija">LinkedIn</a>
+          <a class="footeritem"  href="https://dorantvelija.com/contact">Email</a>
         </ul>
   
         <ul class="footerUl" id="footerRight">
