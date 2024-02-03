@@ -20,7 +20,7 @@ a{
 }
 nav{
     padding-top: 20px;
-    width: 100vw;
+    width: 100%;
     background-color: var(--colorBgLight);
   /*  overflow: hidden;
     position: fixed;
