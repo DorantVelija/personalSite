@@ -244,9 +244,9 @@
 
 
 
-   <h1 style="text-align: center;" id="backToTop2">Scroll to top</h1>
-   <div style="text-align: center;"><img src="./icons/btnUp.svg" id="backToTop" class="goToBtn"></div> 
-   
+   <!--<h1 style="text-align: center;" id="backToTop2">Scroll to top</h1>
+   <div style="text-align: center;"><img src="./icons/btnUp.svg" id="backToTopBtn" class="goToBtn"></div> 
+   -->
    
    
     <footer>
@@ -282,13 +282,15 @@
           behavior: "smooth"
         });
        });   
-       
-       document.getElementById("backToTop").addEventListener("click", function() {
+
+      
+      // Event listener for the "Back to Top" button
+      document.querySelector("#backToTopBtn").addEventListener("click", function() {
           window.scrollTo({
-            top: 0,
-            behavior: "smooth"
+              top: 0,
+              behavior: "smooth" 
           });
-       });
+      });
 
 
        //btn to contact page
@@ -318,23 +320,23 @@
       }
 
       function switchProjects(showId, hideId1, focusId, removeFocusId1, removeFocusId2, hideId2) {
-    let showElement = document.getElementById(showId);
-    let hideElement1 = document.getElementById(hideId1);
-    let focusElement = document.getElementById(focusId);
-    let removeFocusElement1 = document.getElementById(removeFocusId1);
-    let removeFocusElement2 = document.getElementById(removeFocusId2);
-    let hideElement2 = document.getElementById(hideId2);
+          let showElement = document.getElementById(showId);
+          let hideElement1 = document.getElementById(hideId1);
+          let focusElement = document.getElementById(focusId);
+          let removeFocusElement1 = document.getElementById(removeFocusId1);
+          let removeFocusElement2 = document.getElementById(removeFocusId2);
+          let hideElement2 = document.getElementById(hideId2);
 
-    removeFocusElement1.classList.remove("text3Focus");
-    removeFocusElement2.classList.remove("text3Focus");
+          removeFocusElement1.classList.remove("text3Focus");
+          removeFocusElement2.classList.remove("text3Focus");
 
-    focusElement.classList.add("text3Focus");
+          focusElement.classList.add("text3Focus");
 
-    showElement.style.display = "flex";
+          showElement.style.display = "flex";
 
-    hideElement1.style.display = "none";
-    hideElement2.style.display = "none";
-}
+          hideElement1.style.display = "none";
+          hideElement2.style.display = "none";
+      }
 
     </script>
     <script src="./home.js"></script>

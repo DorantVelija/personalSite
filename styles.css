@@ -298,6 +298,9 @@ footer{
     padding: 10px 15px 0px 15px;
     color: var(--colorBgLight);
 }
+.footeritem:hover{
+    cursor: url("./icons/cursors/pointer.svg"), pointer;
+}
 .footerUl{
     padding: 20px;
     justify-content: baseline;
@@ -448,10 +451,10 @@ footer{
     color: var(--colorBgLight) !important;
 }
 #contactDiv{
-    display: flex; 
-    justify-content: center; 
+    display: flex !important; 
+    justify-content: center !important; 
     height: 100vh; 
-    background-image: url(./icons/blob-scene-haikei\ \(5\).svg);
+    background-image: url('./icons/blob-scene-haikei\ \(5\).svg');
     background-size: cover; 
     background-attachment: fixed;
 }
@@ -586,8 +589,17 @@ input, textarea{
         height: 35vh;
     }}
 @media (max-width: 565px){
+    .navItemContact{     
+        text-shadow: 3px 3px 3px var(--colorBgDark);
+    }
+    #contactHello{
+        text-shadow: 3px 3px 3px var(--colorBgDark);
+    }
     .right2{
         padding-top: 20px;
+    }
+    textarea:focus{
+        outline: 1px solid var(--colorBlack);
     }
     
     .codingContainer, .designContainer, .photographyContainer{
