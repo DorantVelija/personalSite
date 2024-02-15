@@ -267,12 +267,12 @@ p{
 
 .section3{
     height: 120vh;
+    padding-top: 100px;
     
 }
 .projectsText{
     display: flex;
     justify-content: center;
-    padding-top: 125px;
 }
 #projectText{
     text-align: center;
@@ -578,6 +578,7 @@ input, textarea{
 
     .section3{
         height: 100vh;
+        padding-top: 0;
     }    
     .textFull1, .textOutline1{
         font-size: 5rem;
@@ -678,7 +679,6 @@ input, textarea{
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            padding-top: 0;
         }
         .text3-3, .text3Focus{
             font-size: 0.7rem !important;
