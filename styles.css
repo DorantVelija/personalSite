@@ -435,7 +435,11 @@ footer{
 #oraselHirdavat{
     background-image: url('./icons/oraselHirdavat.png');
     background-size: cover;
-
+}
+#euroLineW{
+    background-image: url('./icons/euroLineFigma.png');
+    background-size: cover;
+    background-position: 200%;
 }
 
 
