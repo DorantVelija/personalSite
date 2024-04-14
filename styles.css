@@ -432,6 +432,12 @@ footer{
     background-size: cover;
     background-position: 100%;
 }
+#oraselHirdavat{
+    background-image: url('./icons/oraselHirdavat.png');
+    background-size: cover;
+
+}
+
 
 /* CONTACT FORM */
 .containerForm{
