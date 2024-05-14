@@ -441,6 +441,10 @@ footer{
     background-size: cover;
     background-position: 200%;
 }
+#designII{
+    background-image: url("./icons/designII.png");
+    background-size: cover;
+}
 
 
 /* CONTACT FORM */
