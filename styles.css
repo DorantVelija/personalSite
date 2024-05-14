@@ -442,7 +442,7 @@ footer{
     background-position: 200%;
 }
 #designII{
-    background-image: url("./icons/designII.png");
+    background-image: url('./icons/designII.png');
     background-size: cover;
 }
 
